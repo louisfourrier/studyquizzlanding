@@ -91,7 +91,7 @@ body {
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 	-webkit-font-smoothing: antialiased !important;
-	background: url(bg.png) top left repeat #fff;
+	background: url(<%= asset_path 'bg.png' %>) top left repeat #fff;
 	overflow-x: hidden;	
 	margin: 0 auto;
 }
@@ -179,7 +179,7 @@ img, img.responsive {
 	color: #FFFFFF;
 }
 .pageloader { 
-	background: url(loader.gif) center center no-repeat #fff;  
+	background: url(<%= asset_path 'loader.gif' %>) center center no-repeat #fff;  
     height: 100%;
     position: fixed;
     top: 0;
@@ -799,7 +799,7 @@ img, img.responsive {
 }
 /* =========================== DEMO SECTION ============================== */
 .video-bg{
-	background:url(video-bg.png) center center no-repeat;
+	background:url(<%= asset_path 'video-bg.png' %>) center center no-repeat;
 	background-size: cover;
     padding-top:60px;
 	padding-bottom: 60px;	

@@ -19,5 +19,4 @@
 //= require jquery.appear
 //= require jquery.countTo
 //= require jquery.mb.YTPlayer
-//= require custom
 //= require_tree .

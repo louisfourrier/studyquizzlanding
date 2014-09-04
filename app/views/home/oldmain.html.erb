@@ -1,19 +1,21 @@
-<!-- Page Loader -->
-	<div class="pageloader"></div>
+
+	<!-- Page Loader -->
+	<div class="pageloader" style="display: none;"></div>
 	
 	<!-- Wrapper Begins -->
-	<div id="wrapper" class="wrapper-class">
+	<div id="wrapper" class="wrapper-class after-1600">
 		<!-- Header Begins -->
 		<div id="header" class="header-section">
 			<!-- Sticky Header Begins -->
-			<div id="sticky-menu" class="sticky-navigation">
+			<div id="sticky-menu-sticky-wrapper" class="sticky-wrapper" style="height: 69px;"><div id="sticky-menu" class="sticky-navigation">
 				<div class="logo-container">
 					<div class="container">
 						<div class="row">
 						
 							<!-- Logo Begins -->
 							<div class="col-md-2 logo">
-								<a href="#" title="GeekApp"><%= image_tag "logo.png", :class => "img-responsive", :alt => "GeekApp" %></a>
+								<a href="#" title="GeekApp"><%= image_tag "logo.png", :class => "img-responsive", :alt => "GeekApp" %>
+									</a>
 							</div>
 							<!-- Logo Ends -->
 							
@@ -33,13 +35,13 @@
 								<!-- Menu Begins -->
 								<nav id="topnav" role="navigation" class="collapse navbar-collapse bs-navbar-collapse no-padding">
 									<ul class="nav navbar-nav navbar-right uppercase">
-										<li><a href="#about" class="scroll">About</a></li>
-										<li><a href="#features" class="scroll">Features</a></li>
-										<li><a href="#reviews" class="scroll">Reviews</a></li>
-										<li><a href="#app-screen" class="scroll">Screenshot</a></li>
-										<li><a href="#video" class="scroll">Demo</a></li>
-										<li><a href="#download" class="scroll">Download</a></li>
-										<li><a href="#contact-us" class="scroll">Contact</a></li>
+										<li class="active"><a href="#about" class="scroll">About</a></li>
+										<li class=""><a href="#features" class="scroll">Features</a></li>
+										<li class=""><a href="#reviews" class="scroll">Reviews</a></li>
+										<li class=""><a href="#app-screen" class="scroll">Screenshot</a></li>
+										<li class=""><a href="#video" class="scroll">Demo</a></li>
+										<li class=""><a href="#download" class="scroll">Download</a></li>
+										<li class=""><a href="#contact-us" class="scroll">Contact</a></li>
 									</ul>
 								</nav><!-- Menu Ends -->
 							</div><!-- Navigation Menu Ends -->
@@ -56,14 +58,14 @@
 						</div>
 					</div>
 				</div>
-			</div><!-- Sticky Header Ends -->
+			</div></div><!-- Sticky Header Ends -->
 			<!-- Banner Section Begins -->
 			<div class="triangle-bg">				
 				<div id="about" class="banner-section container">
 					<div class="row">
 					
 						<!-- Left Banner Text Begins -->					
-						<div class="col-md-5 left-banner-text animated" data-animation="fadeInLeft" data-animation-delay="500">
+						<div class="col-md-5 left-banner-text animated fadeInLeft" data-animation="fadeInLeft" data-animation-delay="500">
 							<!-- Banner Title -->
 							<h1 class="text-uppercase"><span class="text-extrabold">A geek App</span> Built for passionate people</h1>
 							<!-- Banner Content -->
@@ -85,7 +87,7 @@
 							</div>
 						</div><!-- Left Banner Text Ends -->
 						<!-- Right Banner Image Begins -->
-						<div class="col-md-7 right-banner-image animated" data-animation="fadeInRight" data-animation-delay="500">
+						<div class="col-md-7 right-banner-image animated fadeInRight" data-animation="fadeInRight" data-animation-delay="500">
 							<div class="row">
 								<!-- Banner Counter Info Begins -->
 								<div class="col-sm-5 banner-image-info">
@@ -93,7 +95,7 @@
 									<div class="row">
 										<div class="col-xs-12 banner-left-margin">
 											<div class="banner-info col-xs-6 text-right text-uppercase">
-												<div class="count-number" data-count="6249"><span class="counter text-bold"></span></div> Downloaded
+												<div class="count-number" data-count="6249"><span class="counter text-bold">6249</span></div> Downloaded
 											</div>
 											<div class="banner-info-right col-xs-6 no-padding">
 												<span class="close-brackets">}</span> <i class="fa fa-cloud-download color-yellow"></i>
@@ -104,7 +106,7 @@
 									<div class="row">
 										<div class="col-xs-12 banner-left-margin">
 											<div class="banner-info col-xs-6 text-right text-uppercase">
-												<div class="count-number" data-count="238"><span class="counter text-bold"></span></div> Android Users
+												<div class="count-number" data-count="238"><span class="counter text-bold">238</span></div> Android Users
 											</div>
 											<div class="banner-info-right col-xs-6 no-padding">
 												<span class="close-brackets">}</span> <i class="fa fa-android color-yellow"></i>
@@ -115,7 +117,7 @@
 									<div class="row">
 										<div class="col-xs-12 banner-left-margin">
 											<div class="banner-info col-xs-6 text-right text-uppercase">
-												<div class="count-number" data-count="1027"><span class="counter text-bold"></span></div> IOS Users
+												<div class="count-number" data-count="1027"><span class="counter text-bold">1027</span></div> IOS Users
 											</div>
 											<div class="banner-info-right col-xs-6 no-padding">
 												<span class="close-brackets">}</span> <i class="fa fa-apple color-yellow"></i>
@@ -146,11 +148,11 @@
 						<div class="container relative">
 							<div class="row">
 								<!-- Features Left Info Begins -->
-								<div class="col-md-4 features-left-info animated" data-animation="fadeInLeft" data-animation-delay="500">
+								<div class="col-md-4 features-left-info animated fadeInLeft" data-animation="fadeInLeft" data-animation-delay="1500">
 									<!-- Title -->
-									<h3 class="section-msg1 color-grey text-uppercase"><span class="text-extrabold">Make Your <br />Life Simpler</span> <br />With GEEKAPP</h3>
+									<h3 class="section-msg1 color-grey text-uppercase"><span class="text-extrabold">Make Your <br>Life Simpler</span> <br>With GEEKAPP</h3>
 									<!-- Content -->
-									<p>Ut labores laoreet petentium vix. Nec cu eripuit <br /> alterum, vel cibo laoree</p>
+									<p>Ut labores laoreet petentium vix. Nec cu eripuit <br> alterum, vel cibo laoree</p>
 									<!-- Shape Down Arrow -->	
 									<p class="color-grey"><i class="flaticon flaticon-yield gk-triangle-medium"></i></p>
 									<!-- List Elements -->
@@ -162,17 +164,17 @@
 									</ul>									
 								</div><!-- Features Left Info Ends -->
 								<!-- Features Right Info Begins -->
-								<div class="col-md-8 features-right-info animated" data-animation="fadeInRight" data-animation-delay="500">
+								<div class="col-md-8 features-right-info animated fadeInRight" data-animation="fadeInRight" data-animation-delay="1500">
 									<!-- Shape Pointer -->	
-									<div class="gk-pointer-features gk-right-arrow animated" data-animation="fadeInLeftBig" data-animation-delay="1200">
-										<img src="<%= image_path("right-arrow-icon.png") %>" alt="Pointer" class="img-responsive" />
+									<div class="gk-pointer-features gk-right-arrow animated fadeInLeftBig" data-animation="fadeInLeftBig" data-animation-delay="2200">
+										<img src="<%= image_path("right-arrow-icon.png") %>" alt="Pointer" class="img-responsive">
 									</div>
 									<!-- Title -->
 									<h2 class="section-title color-grey"><span class="text-extrabold">Awesome</span> Features</h2>
 									<!-- Shape Down Arrow -->
 									<p class="text-center color-grey"><i class="flaticon flaticon-yield gk-triangle-medium"></i></p>
 									<!-- Description -->
-									<h3 class="section-msg text-center color-grey">GeekApp offers a wide range of features with Beautiful Design & Great Functionality.</h3>
+									<h3 class="section-msg text-center color-grey">GeekApp offers a wide range of features with Beautiful Design &amp; Great Functionality.</h3>
 									
 									<div class="container features-right-grid">
 										<!-- First Row Begins -->
@@ -188,7 +190,7 @@
 													<p>Ut labores laoreet petentium vix. Nec cu eripuit alterum, vel cibo laoree</p>
 												</div>
 												<!-- Horizontal Line -->
-												<hr class="features-line" />
+												<hr class="features-line">
 											</div><!-- Column 1 Ends -->
 											<!-- Column 2 Begins -->
 											<div class="col-sm-6">
@@ -201,7 +203,7 @@
 													<p>Ut labores laoreet petentium vix. Nec cu eripuit alterum, vel cibo laoree</p>
 												</div>
 												<!-- Horizontal Line -->
-												<hr class="features-line" />
+												<hr class="features-line">
 											</div><!-- Column 2 Ends -->
 										</div><!-- First Row Ends -->
 										
@@ -235,8 +237,8 @@
 							</div>
 							<!-- Features Image Row Begins -->
 							<div class="row">
-								<div class="col-sm-12 ipad-shot-wrapper animated" data-animation="fadeIn" data-animation-delay="600">
-									<img src="<%= image_path("ipad-shot.png") %>" class="img-responsive" alt="IPad Shot" />
+								<div class="col-sm-12 ipad-shot-wrapper animated fadeIn" data-animation="fadeIn" data-animation-delay="600">
+									<img src="<%= image_path("ipad-shot.png") %>" class="img-responsive" alt="IPad Shot">
 								</div>
 							</div><!-- Features Image Row Ends -->
 						</div>
@@ -247,7 +249,7 @@
 						<div class="container">
 							<!-- Reviews Top Row -->
 							<div class="row">
-								<div class="col-md-7 col-lg-6 app-reviews animated" data-animation="fadeInLeft" data-animation-delay="500">
+								<div class="col-md-7 col-lg-6 app-reviews animated fadeInLeft" data-animation="fadeInLeft" data-animation-delay="500">
 									<!-- Title -->
 									<h2 class="section-title color-grey"><span class="text-extrabold">App</span> Reviews</h2>
 									<!-- Shape Down Arrow -->
@@ -255,12 +257,12 @@
 									<!-- Description -->
 									<h3 class="section-msg text-center color-grey">Hear what our customer have to say...</h3>
 									<!-- Shape Pointer -->
-									<div class="gk-pointer-features gk-left-arrow"><img src="<%= image_path("left-arrow-icon.png") %>" alt="Pointer" class="img-responsive" /></div>
+									<div class="gk-pointer-features gk-left-arrow"><img src="<%= image_path("left-arrow-icon.png") %>" alt="Pointer" class="img-responsive"></div>
 								</div>								
 							</div>
 							<!-- Reviews Slider Row Begins-->
 							<div class="row">
-								<div class="col-xs-12 animated" data-animation="fadeInUp" data-animation-delay="800">									
+								<div class="col-xs-12 animated fadeInUp" data-animation="fadeInUp" data-animation-delay="800">									
 									<!-- Reviews Container Begins -->
 									<div id="reviews-slider" class="carousel slide reviews-slider-section" data-ride="carousel">
 										<!-- Indicators Begins -->
@@ -277,7 +279,7 @@
 										<div class="carousel-inner">
 							
 											<!-- Item 1 -->
-											<div class="item active container">
+											<div class="item container active">
 												<div class="row item-grid">
 												
 													<div class="col-lg-6 col-md-6 reviews-info color-grey">
@@ -296,7 +298,7 @@
 													<div class="col-lg-6 col-md-5 reviews-image">
 														<div class="main-reviews-image container">
 															<div class="row">
-																<img class="img-responsive img-circle" src="<%= image_path("reviews/reviews-1.jpg") %>" width="330" height="330" alt="Jennifer" />
+																<img class="img-responsive img-circle" src="<%= image_path("reviews/reviews-1.jpg") %>" width="330" height="330" alt="Jennifer">
 															</div>
 															<div class="gk-reviews-circle-container row">
 																<div class="gk-reviews-big-circle"></div>
@@ -328,7 +330,7 @@
 													<div class="col-lg-6 col-md-5 reviews-image">
 														<div class="main-reviews-image container">
 															<div class="row">
-																<img class="img-responsive img-circle" src="<%= image_path("reviews/reviews-2.jpg") %>" width="330" height="330" alt="Jennifer" />
+																<img class="img-responsive img-circle" src="<%= image_path("reviews/reviews-2.jpg") %>" width="330" height="330" alt="Jennifer">
 															</div>
 															<div class="gk-reviews-circle-container row">
 																<div class="gk-reviews-big-circle"></div>
@@ -360,7 +362,7 @@
 													<div class="col-lg-6 col-md-5 reviews-image">													
 														<div class="main-reviews-image container">
 															<div class="row">
-																<img class="img-responsive img-circle" src="<%= image_path("reviews/reviews-3.jpg") %>" width="330" height="330" alt="Jennifer" />
+																<img class="img-responsive img-circle" src="<%= image_path("reviews/reviews-3.jpg") %>" width="330" height="330" alt="Jennifer">
 															</div>
 															<div class="gk-reviews-circle-container row">
 																<div class="gk-reviews-big-circle"></div>
@@ -394,19 +396,19 @@
 							<!-- Screenshot Top Row Begins -->
 							<div class="row">
 								<!-- Screenshot Left Info Begins -->	
-								<div class="col-md-4 app-left-info animated" data-animation="fadeInLeft" data-animation-delay="500">
+								<div class="col-md-4 app-left-info animated fadeInLeft" data-animation="fadeInLeft" data-animation-delay="500">
 									<!-- Title -->
-									<h3 class="section-msg1 color-grey text-uppercase"><span class="text-extrabold">New</span> <br />Possibilites</h3>
+									<h3 class="section-msg1 color-grey text-uppercase"><span class="text-extrabold">New</span> <br>Possibilites</h3>
 									<!-- Content -->
 									<p>Ut labores laoreet petentium vix. Nec cu eripuit al.</p>																	
 								</div>
 								<!-- Screenshot Left Info Ends -->
 								<!-- Shape Pointer -->
-								<div class="gk-pointer-features gk-app-right-arrow animated" data-animation="fadeIn" data-animation-delay="900">
-									<img src="<%= image_path("right-arrow-icon.png") %>" alt="Pointer" class="img-responsive" />
+								<div class="gk-pointer-features gk-app-right-arrow animated fadeIn" data-animation="fadeIn" data-animation-delay="900">
+									<img src="<%= image_path("right-arrow-icon.png") %>" alt="Pointer" class="img-responsive">
 								</div>
 								<!-- Screenshot Right Info Begins -->
-								<div class="col-md-8 app-right-info animated" data-animation="fadeInRight" data-animation-delay="500">
+								<div class="col-md-8 app-right-info animated fadeInRight" data-animation="fadeInRight" data-animation-delay="500">
 									<!-- Title -->
 									<h2 class="section-title color-white"><span class="text-extrabold">App</span> Screenshot</h2>
 									<!-- Shape Down Arrow -->									
@@ -420,34 +422,35 @@
 						<!-- Screenshot Carousel Begins -->
 						<div class="container app-container">
 							<div class="row">
-								<div class="col-xs-12 animated" data-animation="fadeInUp" data-animation-delay="800">
+								<div class="col-xs-12 animated fadeInUp" data-animation="fadeInUp" data-animation-delay="800">
 									<!-- Carousel Slider Container Begins -->
-									<div id="app-screenshot" class="owl-carousel app-carousel-slider">
+									<div id="app-screenshot" class="owl-carousel app-carousel-slider owl-theme" style="opacity: 1; display: block;">
 										<!-- Item 1 -->
-										<div class="screen-item">
-											<img src="<%= image_path("screenshot/screen-1.jpg") %>" width="314" height="534" alt="App Screenshot" class="img-responsive" />
-										</div>
+										<div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 5160px; left: 0px; display: block;">
+											<div class="owl-item" style="width: 430px;"><div class="screen-item">
+											<img src="<%= image_path("screenshot/screen-1.jpg") %>"  width="314" height="534" alt="App Screenshot" class="img-responsive">
+										</div></div><div class="owl-item" style="width: 430px;"><div class="screen-item">
+											<img src="<%= image_path("screenshot/screen-2.jpg") %>" width="314" height="534" alt="App Screenshot" class="img-responsive">
+										</div></div><div class="owl-item" style="width: 430px;"><div class="screen-item">
+											<img src="<%= image_path("screenshot/screen-3.jpg") %>" width="314" height="534" alt="App Screenshot" class="img-responsive">
+										</div></div><div class="owl-item" style="width: 430px;"><div class="screen-item">
+											<img src="<%= image_path("screenshot/screen-1.jpg") %>" width="314" height="534" alt="App Screenshot" class="img-responsive">
+										</div></div><div class="owl-item" style="width: 430px;"><div class="screen-item">
+											<img src="<%= image_path("screenshot/screen-2.jpg") %>" width="314" height="534" alt="App Screenshot" class="img-responsive">
+										</div></div><div class="owl-item" style="width: 430px;"><div class="screen-item">
+											<img src="<%= image_path("screenshot/screen-3.jpg") %>" width="314" height="534" alt="App Screenshot" class="img-responsive">
+										</div></div></div></div>
 										<!-- Item 2 -->
-										<div class="screen-item">
-											<img src="<%= image_path("screenshot/screen-2.jpg") %>" width="314" height="534" alt="App Screenshot" class="img-responsive" />
-										</div>
+										
 										<!-- Item 3 -->
-										<div class="screen-item">
-											<img src="<%= image_path("screenshot/screen-3.jpg") %>" width="314" height="534" alt="App Screenshot" class="img-responsive" />
-										</div>
+										
 										<!-- Item 4 -->
-										<div class="screen-item">
-											<img src="<%= image_path("screenshot/screen-1.jpg") %>" width="314" height="534" alt="App Screenshot" class="img-responsive" />
-										</div>
+										
 										<!-- Item 5 -->
-										<div class="screen-item">
-											<img src="<%= image_path("screenshot/screen-2.jpg") %>" width="314" height="534" alt="App Screenshot" class="img-responsive" />
-										</div>
+										
 										<!-- Item 6 -->
-										<div class="screen-item">
-											<img src="<%= image_path("screenshot/screen-3.jpg") %>" width="314" height="534" alt="App Screenshot" class="img-responsive" />
-										</div>
-              						</div><!-- Carousel Slider Container Ends -->
+										
+              						<div class="owl-controls clickable"><div class="owl-buttons"><div class="owl-prev"><i class="fa fa-chevron-left color-white"></i></div><div class="owl-next"><i class="fa fa-chevron-right color-white"></i></div></div></div></div><!-- Carousel Slider Container Ends -->
 								</div>
 							</div>
 						</div><!-- Screenshot Carousel Ends -->
@@ -458,7 +461,7 @@
 						<div class="container">
 							<!-- Demo Top Row Begins -->
 							<div class="row relative">								
-								<div class="col-md-7 col-lg-6 animated" data-animation="fadeInLeft" data-animation-delay="500">
+								<div class="col-md-7 col-lg-6 animated fadeInLeft" data-animation="fadeInLeft" data-animation-delay="500">
 									<!-- Title -->
 									<h2 class="section-title color-grey"><span class="text-extrabold">Watch</span> Demo</h2>
 									<!-- Shape Down Arrow -->
@@ -467,18 +470,19 @@
 									<h3 class="section-msg text-center color-grey">Checkout how it works</h3>												
 								</div>
 								<!-- Shape Pointer -->
-								<div class="gk-pointer-features gk-down-arrow animated" data-animation="fadeInRight" data-animation-delay="500">
-									<img src="<%= image_path("down-arrow-icon.png") %>" alt="Pointer" class="img-responsive" />
+								<div class="gk-pointer-features gk-down-arrow animated fadeInRight" data-animation="fadeInRight" data-animation-delay="500">
+									<img src="<%= image_path("down-arrow-icon.png") %>" alt="Pointer" class="img-responsive">
 								</div>
 							</div><!-- Demo Top Row Ends -->
 							<!-- Video Row Begins -->
 							<div class="row">								
-								<div class="col-xs-12 animated" data-animation="fadeInUp" data-animation-delay="800">
+								<div class="col-xs-12 animated fadeInUp" data-animation="fadeInUp" data-animation-delay="800">
 									<!-- Video Container -->
 									<div class="video-bg">
-										<div id="video_container"></div>
+										<div id="video_container"><div class="mbYTP_wrapper" id="wrapper_mbYTP_P2" style="position: absolute; z-index: 0; min-width: 100%; min-height: 100%; left: 0px; top: 0px; overflow: hidden; opacity: 0;">
+											<iframe id="mbYTP_P2" class="playerBox" style="position: absolute; z-index: 0; width: 100%; height: 100%; top: 0px; left: 0px; overflow: hidden; opacity: 1;" frameborder="0" allowfullscreen="1" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/vdRqcPyB1gw?autoplay=0&amp;modestbranding=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=mbYTP_P2&amp;origin=file%3A%2F%2Flocalhost&amp;allowfullscreen=true&amp;wmode=transparent&amp;iv_load_policy=3&amp;html5=1"></iframe><div class="YTPOverlay" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></div></div></div>
 										<!-- Video Player -->
-										<div id="P2" class="player video-container" data-property="{videoURL:'vdRqcPyB1gw',containment:'#video_container',autoPlay:true, showControls:true, mute:true, startAt:0}"></div>
+										<div id="P2" class="player video-container mb_YTVPlayer" data-property="{videoURL:'vdRqcPyB1gw',containment:'#video_container',autoPlay:true, showControls:true, mute:true, startAt:0}" title="Introducing iPhone 6 - 3D concept video" style="background: url(http://i.ytimg.com/vi/vdRqcPyB1gw/hqdefault.jpg) 50% 50% / cover rgba(0, 0, 0, 0.498039);"></div>
 									</div>									
 								</div>
 							</div><!-- Video Row Ends -->
@@ -498,7 +502,7 @@
 						<div class="container">
 							<!-- Download Top Right Row Begins -->
 							<div class="row">																								
-								<div class="col-lg-7 col-md-9 pull-right animated" data-animation="fadeInRight" data-animation-delay="500">
+								<div class="col-lg-7 col-md-9 pull-right animated fadeInRight" data-animation="fadeInRight" data-animation-delay="500">
 									<!-- Title -->
 									<h2 class="section-title color-grey"><span class="text-extrabold">Download</span> App Now</h2>
 									<!-- Shape Down Arrow -->
@@ -508,13 +512,14 @@
 							<!-- Download Content Row Begins -->
 							<div class="row">
 								<!-- Iphone Image -->
-								<div class="col-lg-6 col-md-5 download-left-img animated" data-animation="fadeInLeft" data-animation-delay="500">
+								<div class="col-lg-6 col-md-5 download-left-img animated fadeInLeft" data-animation="fadeInLeft" data-animation-delay="500">
+									
 									<%= image_tag "iphone-bl-wh-shot.png", class:"img-responsive", alt:"IPhone Black" %>									
 								</div>
 								<!-- Right Info -->									
-								<div class="col-lg-5 col-md-7 download-right-info animated" data-animation="fadeInDown" data-animation-delay="800">
+								<div class="col-lg-5 col-md-7 download-right-info animated fadeInDown" data-animation="fadeInDown" data-animation-delay="800">
 									<!-- Content -->
-									<h3 class="section-msg text-center color-grey">Select your device platform and <br /> get download started</h3>
+									<h3 class="section-msg text-center color-grey">Select your device platform and <br> get download started</h3>
 									<!-- Button -->
 									<div class="download-button">								
 										<a href="#" class="btn gk-download-btn yellow-btn gk-btn-margin" role="button"><i class="fa fa-apple"></i> Apple User</a>
@@ -523,6 +528,8 @@
 									<!-- Shape Pointer -->
 									<div class="gk-download-pointer gk-up-right-arrow">
 										<%= image_tag "up-right-arrow-icon.png", class:"img-responsive", alt:"Pointer" %>
+
+										
 										</div>
 								</div>								
 							</div><!-- Download Content Row Ends -->
@@ -534,38 +541,38 @@
 						<div class="container">
 							<div class="row">
 								<!-- Contact Left Info Begins -->
-								<div class="col-md-6 animated" data-animation="fadeInLeft" data-animation-delay="500">
+								<div class="col-md-6 animated fadeInLeft" data-animation="fadeInLeft" data-animation-delay="500">
 									<!-- Title -->
 									<h2 class="section-title color-white"><span class="text-extrabold">Contact</span> Us</h2>
 									<!-- Shape Down Arrow -->
 									<p class="text-center color-white"><i class="flaticon flaticon-yield gk-triangle-medium"></i></p>
 									<!-- Description -->
-									<h3 class="section-msg text-center color-white">Let drop a line to us & we will be <br />in touch soon.</h3>
+									<h3 class="section-msg text-center color-white">Let drop a line to us &amp; we will be <br>in touch soon.</h3>
 									
 									<!-- Contact Form Container Begins -->
 									<p class="gk-form-message"></p>
-									<div class="gk-contact-form container animated" data-animation="fadeInUp" data-animation-delay="900">
+									<div class="gk-contact-form container animated fadeInUp" data-animation="fadeInUp" data-animation-delay="900">
 										<!-- Form Begins -->
-										<form role="form" name="contactform" class="form-horizontal" id="contactform" method="post" action="process.php">
+										<form role="form" name="contactform" class="form-horizontal bv-form" id="contactform" method="post" action="process.php" novalidate="novalidate">
 											<div class="row">
 												<div class="col-sm-12 col-md-12">
 													<div class="container">
 														<div class="row">
 															<!-- Input: Name -->
-															<div class="col-md-6 form-group gk-input-text">																											
-																<input type="text" name="contact_name" class="input-name form-control" placeholder="Name">																
-															</div>
+															<div class="col-md-6 form-group gk-input-text has-feedback">																											
+																<input type="text" name="contact_name" class="input-name form-control" placeholder="Name" data-bv-field="contact_name"><i class="form-control-feedback" data-bv-icon-for="contact_name" style="display: none; top: 0px;"></i>																
+															<small data-bv-validator="notEmpty" data-bv-validator-for="contact_name" class="help-block" style="display: none;"></small></div>
 															<!-- Input: Email -->
-															<div class="col-md-6 form-group gk-email pull-right">																							
-																<input type="email" name="contact_email" class="input-email form-control email" placeholder="Email">																
-															</div>
+															<div class="col-md-6 form-group gk-email pull-right has-feedback">																							
+																<input type="email" name="contact_email" class="input-email form-control email" placeholder="Email" data-bv-field="contact_email"><i class="form-control-feedback" data-bv-icon-for="contact_email" style="display: none; top: 0px;"></i>																
+															<small data-bv-validator="notEmpty" data-bv-validator-for="contact_email" class="help-block" style="display: none;"></small><small data-bv-validator="emailAddress" data-bv-validator-for="contact_email" class="help-block" style="display: none;"></small></div>
 														</div>
 													</div>
-													<div class="form-group">
+													<div class="form-group has-feedback">
 														<!-- Input: Textarea -->
 														<div class="col-lg-9 col-md-9 gk-textarea-message">															
-															<textarea name="contact_message" class="textarea-message form-control" rows="4" cols="25" placeholder="Message"></textarea>
-														</div>														
+															<textarea name="contact_message" class="textarea-message form-control" rows="4" cols="25" placeholder="Message" data-bv-field="contact_message"></textarea><i class="form-control-feedback" data-bv-icon-for="contact_message" style="display: none; top: 0px;"></i>
+														<small data-bv-validator="notEmpty" data-bv-validator-for="contact_message" class="help-block" style="display: none;"></small></div>														
 													</div>													
 													<!-- Submit Button -->
 													<div class="gk-input-submit submit">
@@ -573,14 +580,14 @@
 													</div>
 												</div>
 											</div>
-										</form><!-- Form Ends -->
+										<input type="hidden" value=""></form><!-- Form Ends -->
 									</div><!-- Contact Form Container Ends -->
 								</div><!-- Contact Left Info Ends -->
 								
 								<!-- Contact Right Info Begins -->
-								<div class="col-md-6 animated" data-animation="fadeInRight" data-animation-delay="500">
+								<div class="col-md-6 animated fadeInRight" data-animation="fadeInRight" data-animation-delay="500">
 									<!-- Shape Pointer -->
-									<div class="gk-contact-pointer gk-contact-down-arrow"><img src="<%= image_path("down-arrow-icon.png") %>" alt="Pointer" class="img-responsive" /></div>
+									<div class="gk-contact-pointer gk-contact-down-arrow"><img src="<%= image_path("down-arrow-icon.png") %>" alt="Pointer" class="img-responsive"></div>
 									<!-- Contact Info Begins -->
 									<div class="container contact-info">										
 										<div class="row">
@@ -631,7 +638,7 @@
 					<div class="row">
 						<!-- Footer Content -->
 						<div class="center-block">
-							<p class="text-center">&copy; 2014 GeekApp 
+							<p class="text-center">© 2014 GeekApp 
 								<span class="footer-social-icon">
 									<a href="#" class="gk-facebook"><i class="fa fa-facebook"></i></a>
 									<a href="#" class="gk-twitter"><i class="fa fa-twitter"></i></a>
@@ -644,22 +651,6 @@
 		</div><!-- Footer Ends -->
 		
 	</div><!-- Wrapper Ends -->
-		
-	<!-- Color Switcher -->
-	<section id="theme-panel" class="close-theme-panel">
-		<!--Panel Button -->
-		<a class="panel-button dark"><i class="fa fa-cog fa-spin"></i></a>
-		<div class="segment">
-			<h4 class="uppercase no-padding bold-italic">Color Switcher</h4>
-		</div>		
-		<!-- Colors -->
-		<div class="segment">			
-			<a title="" class="switcher color1-bg" href="../color-1/"></a>
-			<a title="" class="switcher color2-bg" href="../color-2/"></a>
-			<a title="" class="switcher color3-bg" href="../color-3/"></a>			
-		</div>
-</section><!-- End Color Switcher -->
-	
 		
 	
 	

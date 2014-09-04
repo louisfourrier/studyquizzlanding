@@ -11,14 +11,16 @@
   <%= stylesheet_link_tag 'http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' %>
   <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,800italic,700,300italic,700italic,400italic' %>
   <%= stylesheet_link_tag    'application', media: 'all' %>
-  
+ 
   
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <%= yield %>
-
 <%= javascript_include_tag 'application' %>
+
+<%= yield :javascript %>
+
 </body>
 </html>

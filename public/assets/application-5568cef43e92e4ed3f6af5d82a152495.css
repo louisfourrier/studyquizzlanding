@@ -67,12 +67,11 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 
 /* mouse grab icon */
 .grabbing { 
-    cursor:url(grabbing.png) 8 8, move;
+    cursor: url(grabbing.png) 8 8, move;
 }
 
 /* fix */
-.owl-carousel  .owl-wrapper,
-.owl-carousel  .owl-item{
+.owl-carousel  .owl-wrapper,.owl-carousel  .owl-item{
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility:    hidden;
 	-ms-backface-visibility:     hidden;
@@ -866,981 +865,1371 @@ you can use the generic selector below, but it's slower:
 10. CONTACT US SECTION
 11. FOOTER SECTION
 =========================================================================== */
-
 /* =========================== GLOBAL STYLES ============================== */
 /* ------------- Fonts ------------- */
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/flaticon.eot");
+  src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"), url("../fonts/flaticon.woff") format("woff"), url("../fonts/flaticon.ttf") format("truetype"), url("../fonts/flaticon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
-	font-family: "Flaticon";
-	src: url("../fonts/flaticon.eot");
-	src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"),
-	url("../fonts/flaticon.woff") format("woff"),
-	url("../fonts/flaticon.ttf") format("truetype"),
-	url("../fonts/flaticon.svg") format("svg");
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'latohairline';
+  src: url("../fonts/lato-hai-webfont.eot");
+  src: url("../fonts/lato-hai-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-hai-webfont.woff") format("woff"), url("../fonts/lato-hai-webfont.ttf") format("truetype"), url("../fonts/lato-hai-webfont.svg#latohairline") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
-@font-face {
-    font-family: 'latohairline';
-    src: url('../fonts/lato-hai-webfont.eot');
-    src: url('../fonts/lato-hai-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/lato-hai-webfont.woff') format('woff'),
-         url('../fonts/lato-hai-webfont.ttf') format('truetype'),
-         url('../fonts/lato-hai-webfont.svg#latohairline') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+
+/* line 58, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
-	font-family: Flaticon;
-    font-size: 20px;
-	font-style: normal;	
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-size: 20px;
+  font-style: normal;
 }
+
+/* line 63, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .flaticon-arrow351:before {
-	content: "\e000";
+  content: "\e000";
 }
+
+/* line 66, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .flaticon-big44:before {
-	content: "\e001";
+  content: "\e001";
 }
+
+/* line 69, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .flaticon-check13:before {
-	content: "\e002";
+  content: "\e002";
 }
+
+/* line 72, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .flaticon-checkmark17:before {
-	content: "\e003";
+  content: "\e003";
 }
+
+/* line 75, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .flaticon-open7:before {
-	content: "\e004";
+  content: "\e004";
 }
+
+/* line 78, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .flaticon-phone71:before {
-	content: "\e005";
+  content: "\e005";
 }
+
+/* line 81, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .flaticon-yield:before {
-	content: "\e006";
+  content: "\e006";
 }
-.glyph-item { 
-    line-height: 1;
-	display: inline-block;
+
+/* line 84, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
+.glyph-item {
+  line-height: 1;
+  display: inline-block;
 }
+
 /* ------------- Main Styles ------------- */
+/* line 89, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 body {
-	color: #bdc3c7;
-	font-size: 12px;
-	padding: 0;
-	font-family: 'Open Sans', sans-serif;
-	-webkit-font-smoothing: antialiased !important;
-	background: url(bg.png) top left repeat #fff;
-	overflow-x: hidden;	
-	margin: 0 auto;
+  color: #bdc3c7;
+  font-size: 12px;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased !important;
+  background: url(bg.png) top left repeat white;
+  overflow-x: hidden;
+  margin: 0 auto;
 }
-a, a:hover, a:focus, .btn:focus{
-    text-decoration: none;
-	outline: none;
+
+/* line 99, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
+a, a:hover, a:focus, .btn:focus {
+  text-decoration: none;
+  outline: none;
 }
+
+/* line 103, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 img, img.responsive {
-	max-width:100%;
-	width: auto \9 !important;
+  max-width: 100%;
+  width: auto \9 !important;
 }
+
+/* line 107, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .relative {
-	position: relative;
+  position: relative;
 }
+
+/* line 110, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .absolute {
-	position: absolute;
+  position: absolute;
 }
+
+/* line 113, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .static {
-	position: static;
+  position: static;
 }
+
+/* line 116, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .container {
-    max-width: 1200px;
-	width: 100%;
+  max-width: 1200px;
+  width: 100%;
 }
+
+/* line 120, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .no-padding {
-	padding: 0;
+  padding: 0;
 }
+
+/* line 123, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .uppercase {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
+
+/* line 126, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .capitalize {
-	text-transform: capitalize;
+  text-transform: capitalize;
 }
+
+/* line 129, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .animated {
-	visibility:hidden;
-	animation-fill-mode: none;
-	-webkit-animation-fill-mode: none;
-	-moz-animation-fill-mode: none;
-	-o-animation-fill-mode: none;
-	-ms-animation-fill-mode: none;
+  visibility: hidden;
+  animation-fill-mode: none;
+  -webkit-animation-fill-mode: none;
+  -moz-animation-fill-mode: none;
+  -o-animation-fill-mode: none;
+  -ms-animation-fill-mode: none;
 }
+
+/* line 137, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .visible {
-	visibility:visible;
+  visibility: visible;
 }
+
+/* line 140, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .btn:hover, .btn:focus {
-	background: #FFFFFF;
+  background: #FFFFFF;
 }
+
+/* line 143, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .btn {
-	display: inline-block;
-    -webkit-transition: all 500ms linear;
-    -moz-transition: all 500ms linear;
-    -o-transition: all 500ms linear;
-    -ms-transition: all 500ms linear;
-    transition: all 500ms linear;
+  display: inline-block;
+  -webkit-transition: all 500ms linear;
+  -moz-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  -ms-transition: all 500ms linear;
+  transition: all 500ms linear;
 }
+
 /* ------------- Extra Classes ------------- */
+/* line 152, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .text-extrabold {
-	font-weight: 800;
+  font-weight: 800;
 }
+
+/* line 155, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .text-bold {
-	font-weight: 700;
+  font-weight: 700;
 }
+
+/* line 158, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .light-italic {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	font-style: italic;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
 }
+
+/* line 163, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .extrabold-italic {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 800;
-	font-style: italic;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-style: italic;
 }
+
+/* line 168, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .bold-italic {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	font-style: italic;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }
+
+/* line 173, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .color-yellow {
-	color: #F1C40F;
+  color: #F1C40F;
 }
+
+/* line 176, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .color-grey {
-	color: #7f8c8d;
+  color: #7f8c8d;
 }
+
+/* line 179, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .color-white {
-	color: #FFFFFF;
+  color: #FFFFFF;
 }
-.pageloader { 
-	background: url(loader.gif) center center no-repeat #fff;  
-    height: 100%;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 99999;	
+
+/* line 182, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
+.pageloader {
+  background: url(loader.gif) center center no-repeat white;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
 }
+
 /* ------- Z Indexes ------- */
+/* line 191, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .index-1 {
-	z-index: 1;
+  z-index: 1;
 }
+
+/* line 194, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .index-2 {
-	z-index: 2;
+  z-index: 2;
 }
+
+/* line 197, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .index-3 {
-	z-index: 3;
+  z-index: 3;
 }
+
+/* line 200, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .index-big {
-	z-index: 99;
+  z-index: 99;
 }
+
 /* ------- Social Icon Hover Styles ------- */
+/* line 204, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-facebook:hover, .gk-facebook:focus, .gk-facebook:active {
-	background: #3B5999;
-	color: #fff;
+  background: #3B5999;
+  color: #fff;
 }
+
+/* line 208, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-twitter:hover, .gk-twitter:focus, .gk-twitter:active {
-	background: #00ACEE;
-	color: #fff;
+  background: #00ACEE;
+  color: #fff;
 }
+
 /* ------- Title and Desc Styles ------- */
+/* line 213, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .section-title {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 61px;
-	text-align: center;
-	text-transform: uppercase;
-	margin-bottom: 20px;
-	font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 61px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 300;
 }
+
+/* line 221, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .after-2000 .section-title, .after-2600 .section-title, .after-3000 .section-title {
-	font-size: 60px;
+  font-size: 60px;
 }
+
+/* line 224, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .section-msg {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	font-size: 32px;
-	line-height: 1.4;
-	margin-top: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.4;
+  margin-top: 15px;
 }
+
+/* line 231, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .section-msg1 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	font-size: 42px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 42px;
 }
+
+/* line 236, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-triangle-medium:before, .gk-triangle-medium:after {
-	font-size: 30px;
+  font-size: 30px;
 }
+
 /* ------- Pointer Arrow Common Styles ------- */
+/* line 240, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-pointer-features {
-	position: absolute;
+  position: absolute;
 }
+
+/* line 243, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-pointer-features.animated {
-	visibility: hidden;
+  visibility: hidden;
 }
+
+/* line 246, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-pointer-features.visible {
-	visibility: visible;
+  visibility: visible;
 }
+
 /* ------------- Button Styles ------------- */
+/* line 250, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-btn {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	font-size: 13px;
-	text-transform: uppercase;
-	padding: 13px 12px;
-	width: 159px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 13px 12px;
+  width: 159px;
 }
+
+/* line 258, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-btn .fa {
-	padding-right: 8px;
+  padding-right: 8px;
 }
+
+/* line 261, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-btn-margin {
-	margin-right: 30px;
+  margin-right: 30px;
 }
+
+/* line 264, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .yellow-btn {
-	border-color: #F1C40F;
-	color: #F1C40F;
+  border-color: #F1C40F;
+  color: #F1C40F;
 }
+
+/* line 268, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .yellow-btn:hover, .yellow-btn:active, .yellow-btn:focus {
-	background: #F1C40F;
-	color: #FFFFFF;
+  background: #F1C40F;
+  color: #FFFFFF;
 }
+
+/* line 272, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .green-btn:hover, .green-btn:active, .green-btn:focus {
-	background: #1abc9c;
-	color: #FFFFFF;
+  background: #1abc9c;
+  color: #FFFFFF;
 }
+
+/* line 276, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .green-btn {
-	border-color: #1abc9c;
-	color: #1abc9c;
+  border-color: #1abc9c;
+  color: #1abc9c;
 }
 
 /* =========================== HEADER SECTION ============================== */
 /* ------------- Triangle Background ------------- */
-.triangle-bg {	
-	min-height: 480px;
-	position: relative;
-	top: -70px;	
-	margin: 0 auto;
-	background: #FFFFFF;
+/* line 283, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
+.triangle-bg {
+  min-height: 480px;
+  position: relative;
+  top: -70px;
+  margin: 0 auto;
+  background: #FFFFFF;
 }
+
+/* line 290, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .triangle-bg:before {
-	border-color: #2D3E50 transparent transparent #2D3E50;
-    border-style: solid;
-    border-width: 550px;
-    content: "";
-    height: 0;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 0;
-    z-index: 1;	
+  border-color: #2D3E50 transparent transparent #2D3E50;
+  border-style: solid;
+  border-width: 550px;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 0;
+  z-index: 1;
 }
+
+/* line 302, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .after-1600 .triangle-bg:before {
-	border-width: 630px;
+  border-width: 630px;
 }
+
+/* line 305, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .after-1800 .triangle-bg:before {
-	border-width: 675px;
+  border-width: 675px;
 }
-.after-2000 .triangle-bg:before {	
-	border-width: 725px;
+
+/* line 308, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
+.after-2000 .triangle-bg:before {
+  border-width: 725px;
 }
-.after-2600 .triangle-bg:before {	
-	border-width: 900px;
+
+/* line 311, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
+.after-2600 .triangle-bg:before {
+  border-width: 900px;
 }
-.after-3000 .triangle-bg:before {	
-	border-width: 1350px;
+
+/* line 314, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
+.after-3000 .triangle-bg:before {
+  border-width: 1350px;
 }
+
 /* ------------- Logo & Menu ------------- */
+/* line 318, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .logo-container {
-	background: rgba(27,38,51,0.9);
-	color: #fff;
-	padding: 16px 0 13px;
+  background: rgba(27, 38, 51, 0.9);
+  color: #fff;
+  padding: 16px 0 13px;
 }
+
+/* line 323, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .sticky-navigation {
-	width: 100%;
-	z-index: 9999;	
-	position: relative;
+  width: 100%;
+  z-index: 9999;
+  position: relative;
 }
+
 /* -------- Navigation --------- */
+/* line 329, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .top-navbar {
-	margin: 0;
-	min-height: inherit;
+  margin: 0;
+  min-height: inherit;
 }
-.top-navbar ul.nav a {	
-	font-size: 13px;
-	font-weight: 800;	
-	color: #F1C40F;
+
+/* line 333, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
+.top-navbar ul.nav a {
+  font-size: 13px;
+  font-weight: 800;
+  color: #F1C40F;
 }
+
+/* line 338, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .top-navbar ul.nav a:hover, .top-navbar ul.nav a:focus, .top-navbar ul.nav a:active, .top-navbar ul.nav li.active a {
-	background:none !important;
-	color: #1abc9c;
+  background: none !important;
+  color: #1abc9c;
 }
+
+/* line 342, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .navbar-toggle {
-	background-color: #F1C40F;
-	margin-top:-40px;
-	margin-right:0px;
+  background-color: #F1C40F;
+  margin-top: -40px;
+  margin-right: 0px;
 }
+
+/* line 347, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .navbar-toggle .icon-bar {
-	background-color:#FFFFFF;
+  background-color: #FFFFFF;
 }
+
+/* line 350, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .navbar-nav {
-	margin: 0;
+  margin: 0;
 }
+
+/* line 353, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .navbar-nav li {
-	margin-right: 20px;
+  margin-right: 20px;
 }
+
+/* line 356, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .after-2000 .navbar-nav li, .after-2600 .navbar-nav li {
-	margin-right: 12px;
+  margin-right: 12px;
 }
-.navbar-nav li a{
-	padding-bottom:7px;
-	padding-top:7px;
+
+/* line 359, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
+.navbar-nav li a {
+  padding-bottom: 7px;
+  padding-top: 7px;
 }
-.top-navbar .dropdown a{
-	background:none !important;
+
+/* line 363, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
+.top-navbar .dropdown a {
+  background: none !important;
 }
+
 /* ------------- Top Social Icon Styles ------------- */
+/* line 367, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .top-social-icon {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
 }
+
+/* line 373, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .top-social-icon li {
-	float: left;	
+  float: left;
 }
+
+/* line 376, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .top-social-icon li a {
-	background: #fff;
-	border-radius: 100%;	
-	font-size: 12px;	
-	display: block;
-	width: 18px;
-	height: 18px;
-	color: #1b2633;
-	margin: 7px 26px 0 0;	
+  background: #fff;
+  border-radius: 100%;
+  font-size: 12px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  color: #1b2633;
+  margin: 7px 26px 0 0;
 }
+
+/* line 386, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .top-social-icon li .fa {
-	width: 18px;
-	height: 18px;
-	display: block;
-	line-height: 18px;
-	text-align: center;
+  width: 18px;
+  height: 18px;
+  display: block;
+  line-height: 18px;
+  text-align: center;
 }
+
+/* line 393, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .top-social-icon li:last-child a {
-	margin-right: 0;
+  margin-right: 0;
 }
+
 /* =========================== BANNER SECTION ============================== */
 /* ------------- Left Banner Styles ------------- */
+/* line 398, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .left-banner-text {
-	margin-top: 60px;
-	padding-top: 50px;
-	color: #FFFFFF;
+  margin-top: 60px;
+  padding-top: 50px;
+  color: #FFFFFF;
 }
+
+/* line 403, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .after-1500 .left-banner-text {
-	margin-top: 30px;
+  margin-top: 30px;
 }
+
+/* line 406, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .after-1500 .right-banner-image {
-	margin-top: 20px;
+  margin-top: 20px;
 }
+
+/* line 409, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .left-banner-text h1 {
-	font-size: 53px;
-	margin-bottom: 30px;
-	font-weight: 300;
-	font-family: 'Open Sans', sans-serif;
+  font-size: 53px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
 }
+
+/* line 415, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .banner-text {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	font-size: 17px;
-	padding: 0 30px 0 0;
-	color: #7f8c8d;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  padding: 0 30px 0 0;
+  color: #7f8c8d;
 }
+
+/* line 422, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .banner-button {
-	padding: 32px 45px 0 0;
+  padding: 32px 45px 0 0;
 }
+
+/* line 425, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .triangle-shape {
-	padding: 45px 0 0;
+  padding: 45px 0 0;
 }
+
+/* line 428, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .flaticon.gk-triangle-bigsharp:before, .flaticon.gk-triangle-bigsharp:after {
-	font-size: 36px;
-	font-weight: bold;
+  font-size: 36px;
+  font-weight: bold;
 }
+
+/* line 432, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .banner-section {
-	padding-top: 70px;
-	position: relative;
-	z-index: 10;
+  padding-top: 70px;
+  position: relative;
+  z-index: 10;
 }
+
+/* line 437, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .banner-triangle:hover, .banner-triangle:active, .banner-triangle:focus {
-	color: #FFFFFF;	
+  color: #FFFFFF;
 }
+
+/* line 440, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .banner-triangle:hover {
-	opacity: 0.6;
-	transition: all 0.4s ease-in 0s;
-	-moz-transition: all 0.4s ease-in 0s;
-	-webkit-transition: all 0.4s ease-in 0s;
-	-o-transition: all 0.4s ease-in 0s;
-	-ms-transition: all 0.4s ease-in 0s;
+  opacity: 0.6;
+  transition: all 0.4s ease-in 0s;
+  -moz-transition: all 0.4s ease-in 0s;
+  -webkit-transition: all 0.4s ease-in 0s;
+  -o-transition: all 0.4s ease-in 0s;
+  -ms-transition: all 0.4s ease-in 0s;
 }
+
+/* line 448, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .banner-left-margin {
-	margin-left: 45px;
-	margin-bottom: 12px;
+  margin-left: 45px;
+  margin-bottom: 12px;
 }
+
 /* ------------- Right Banner Styles ------------- */
+/* line 453, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .right-banner-image {
-	padding-top: 10px;
-	margin-top: 50px;
+  padding-top: 10px;
+  margin-top: 50px;
 }
+
+/* line 457, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .banner-image-info {
-	margin-top: 410px;
+  margin-top: 410px;
 }
+
+/* line 460, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .banner-info {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	font-size: 12px;
-	color: #bdc3c7;
-	padding-right: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #bdc3c7;
+  padding-right: 5px;
 }
+
+/* line 467, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .banner-info .text-bold {
-	font-size: 32px;
-	display: block;
-	color: #7f8c8d;
+  font-size: 32px;
+  display: block;
+  color: #7f8c8d;
 }
+
+/* line 472, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .close-brackets {
-	font-family: 'latohairline';
-	color: #dee1e4;
-	font-size: 86px;
+  font-family: 'latohairline';
+  color: #dee1e4;
+  font-size: 86px;
 }
+
+/* line 477, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .banner-image-info .fa {
-	font-size: 32px;
-	vertical-align: top;
-	line-height: 80px;
-	margin-top: 20px;
-	padding-left: 15px;
-	width: 40px;
+  font-size: 32px;
+  vertical-align: top;
+  line-height: 80px;
+  margin-top: 20px;
+  padding-left: 15px;
+  width: 40px;
 }
+
+/* line 485, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .banner-info-right {
-	margin-top: -30px;
+  margin-top: -30px;
 }
+
 /* =========================== SHAPE SECTION ============================== */
-.shape-section {	
-	position: relative;
-	overflow: hidden;
-	top: -110px;	
-	margin: 0 auto -110px auto;
-	background: #FFFFFF;
+/* line 489, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
+.shape-section {
+  position: relative;
+  overflow: hidden;
+  top: -110px;
+  margin: 0 auto -110px auto;
+  background: #FFFFFF;
 }
-.gk-shape-cover {    
-    position: relative;
-    top: 0;
-	margin-bottom: 80px;
+
+/* line 496, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
+.gk-shape-cover {
+  position: relative;
+  top: 0;
+  margin-bottom: 80px;
 }
+
+/* line 501, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-dd-shape {
-    width: 100%;
-    height: 1800px;
-    position: relative;
-	max-width: 1600px;
-	margin: 0 auto;
+  width: 100%;
+  height: 1800px;
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
 }
-.gk-dd-shape:before{
-    position: absolute;
-    display: block;
-    content: "";
-    width: 1800px;
-    height: 1800px;
-    left: -765px;
-    top: 375px;	
-    right: 0;
-    bottom: 0;
-    -webkit-transform: rotate(43deg);
-    -moz-transform: rotate(43deg);
-	-o-transform: rotate(43deg);
-	-ms-transform: rotate(43deg);
-    transform: rotate(43deg);
+
+/* line 508, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
+.gk-dd-shape:before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 1800px;
+  height: 1800px;
+  left: -765px;
+  top: 375px;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: rotate(43deg);
+  -moz-transform: rotate(43deg);
+  -o-transform: rotate(43deg);
+  -ms-transform: rotate(43deg);
+  transform: rotate(43deg);
 }
+
+/* line 524, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-dd-shape:after {
-    position: absolute;
-    display:block;
-    content: "";
-   	width: 1800px;
-    height: 1800px;    
-    top: 1350px;
-    left: 25%;
-    bottom: 0;    
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+  position: absolute;
+  display: block;
+  content: "";
+  width: 1800px;
+  height: 1800px;
+  top: 1350px;
+  left: 25%;
+  bottom: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
+
+/* line 539, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .after-1500 .gk-dd-shape:before {
-	left: -685px;
+  left: -685px;
 }
+
+/* line 542, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .after-1500 .gk-dd-shape:after {
-	left: 29%;
-	top: 1320px;
+  left: 29%;
+  top: 1320px;
 }
+
+/* line 546, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .after-1600 .gk-dd-shape:before {
-	left: -635px;
+  left: -635px;
 }
+
+/* line 549, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .after-1600 .gk-dd-shape:after {
-	left: 30%;
-	top: 1320px;
+  left: 30%;
+  top: 1320px;
 }
+
+/* line 553, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .after-1800 .gk-dd-shape:before, .after-2000 .gk-dd-shape:before, .after-2600 .gk-dd-shape:before, .after-3000 .gk-dd-shape:before {
-	height: 3800px;
-    left: -1300px;
-	top: 110px;
+  height: 3800px;
+  left: -1300px;
+  top: 110px;
 }
+
+/* line 558, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .after-1800 .gk-dd-shape:after, .after-2000 .gk-dd-shape:after, .after-2600 .gk-dd-shape:after, .after-3000 .gk-dd-shape:after {
-	width: 3800px;
-	top: 2000px;
-	left: 14%;
+  width: 3800px;
+  top: 2000px;
+  left: 14%;
 }
+
 /* ------------- Shape Color Styles ------------- */
+/* line 564, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .grey-green-color:before {
-	background: #ecf0f1;
+  background: #ecf0f1;
 }
+
+/* line 567, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .grey-green-color:after {
-	background: #16A086;
+  background: #16A086;
 }
+
+/* line 570, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .white-grey-color:before {
-	background: #FFFFFF;
+  background: #FFFFFF;
 }
+
+/* line 573, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .white-grey-color:after {
-	background: #ecf0f1;
+  background: #ecf0f1;
 }
+
+/* line 576, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .yellow-white-color:before {
-	background: #F1C40F;
+  background: #F1C40F;
 }
+
+/* line 579, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .yellow-white-color:after {
-	background: #FFFFFF;
+  background: #FFFFFF;
 }
+
 /* =========================== FEATURES SECTION ============================== */
+/* line 583, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .features-section {
-	padding: 120px 0 20px;
+  padding: 120px 0 20px;
 }
+
+/* line 586, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .features-left-info {
-	padding: 120px 0 0 15px;
+  padding: 120px 0 0 15px;
 }
+
+/* line 589, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-list {
-    display: inline-block;
-    width: 100%;
-	padding-top: 5px;
+  display: inline-block;
+  width: 100%;
+  padding-top: 5px;
 }
+
+/* line 594, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-list li {
-	font-size: 17px;
-	clear: both;
-	float: left;
-	display: inline-block;
-	border-bottom: 1px solid #bdc3c7;
-	padding: 5px 12px 5px 0;
+  font-size: 17px;
+  clear: both;
+  float: left;
+  display: inline-block;
+  border-bottom: 1px solid #bdc3c7;
+  padding: 5px 12px 5px 0;
 }
+
+/* line 602, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-list li .fa {
-	display: inline;
-	font-size: 15px;	
+  display: inline;
+  font-size: 15px;
 }
+
+/* line 606, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-list li .simple-icon {
-	font-size: 14px;
-	padding-right: 4px;
-	text-shadow: 0 0 0;
+  font-size: 14px;
+  padding-right: 4px;
+  text-shadow: 0 0 0;
 }
+
+/* line 611, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-list li.no-border {
-	border: none;
+  border: none;
 }
+
+/* line 614, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .features-right-grid {
-	padding-top: 30px;
-	padding-left: 40px;
+  padding-top: 30px;
+  padding-left: 40px;
 }
+
+/* line 618, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .text-right .features-grid {
-	padding: 0 30px 10px 30px;
+  padding: 0 30px 10px 30px;
 }
+
+/* line 621, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .features-grid {
-	padding: 0 40px 10px 0;	
+  padding: 0 40px 10px 0;
 }
+
+/* line 624, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .features-grid .fa, .features-grid .simple-icon {
-	font-size: 26px;
-	padding-bottom: 10px;
+  font-size: 26px;
+  padding-bottom: 10px;
 }
+
+/* line 628, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .grid-title {
-	font-size: 21px;
+  font-size: 21px;
 }
+
+/* line 631, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .features-line {
-	border-color: #bdc3c7;
-	width: 78%;
+  border-color: #bdc3c7;
+  width: 78%;
 }
-.features-right-grid .text-right .features-line {	
-	margin-left: 20px;
-	margin-right: 20px;
-	float: right;
+
+/* line 635, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
+.features-right-grid .text-right .features-line {
+  margin-left: 20px;
+  margin-right: 20px;
+  float: right;
 }
+
+/* line 640, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .features-right-grid .features-line {
-	margin-right: 20px;
-	margin-left: -10px;
-	float: left;
+  margin-right: 20px;
+  margin-left: -10px;
+  float: left;
 }
+
+/* line 645, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-divider {
-	border-right: 1px solid #bdc3c7;
+  border-right: 1px solid #bdc3c7;
 }
+
+/* line 648, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .ipad-shot-wrapper {
-	margin-top: -130px;	
-	margin-left: -25px;
-	z-index: -1;
+  margin-top: -130px;
+  margin-left: -25px;
+  z-index: -1;
 }
+
+/* line 653, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .features-right-info {
-	position: static;
-	padding-left: 120px;	
+  position: static;
+  padding-left: 120px;
 }
-.gk-pointer-features.gk-right-arrow {	
-	left: 15%;
-	top: 6%;
+
+/* line 657, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
+.gk-pointer-features.gk-right-arrow {
+  left: 15%;
+  top: 6%;
 }
+
 /* =========================== REVIEWS SECTION ============================== */
-.gk-pointer-features.gk-left-arrow {	
-	top: 100%;
-	right: -44%;
+/* line 662, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
+.gk-pointer-features.gk-left-arrow {
+  top: 100%;
+  right: -44%;
 }
+
+/* line 666, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .section-padding {
-	padding: 80px 0 20px;
+  padding: 80px 0 20px;
 }
+
+/* line 669, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .reviews-slider-section {
-	padding: 90px 0 0;
+  padding: 90px 0 0;
 }
+
+/* line 672, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .reviews-info {
-	text-align: center;
-	padding: 0 50px;
+  text-align: center;
+  padding: 0 50px;
 }
+
+/* line 676, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .reviews-msg {
-	font-size: 17px;
-	margin-bottom: 40px;
-	line-height: 1.6;
+  font-size: 17px;
+  margin-bottom: 40px;
+  line-height: 1.6;
 }
+
+/* line 681, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .reviews-msg:before {
-	content: "\e004";	
-	font-family: Flaticon;
-	color: #F1C40F;
-	font-size: 26px;
+  content: "\e004";
+  font-family: Flaticon;
+  color: #F1C40F;
+  font-size: 26px;
 }
+
+/* line 687, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .reviews-image img {
-	float: right;
-	max-width: 310px;
-	margin: 30px 30px 0 0;
+  float: right;
+  max-width: 310px;
+  margin: 30px 30px 0 0;
 }
+
+/* line 692, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .reviews-author:before {
-	content: "";	
-	width: 100%;
-	height: 100%;
-	border: 1px solid #7f8c8d;
-	border-radius: 50%;
-	padding: 0 7px;
-	font-size: 10px;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 1px solid #7f8c8d;
+  border-radius: 50%;
+  padding: 0 7px;
+  font-size: 10px;
 }
+
+/* line 701, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .reviews-author {
-	font-size: 21px;
+  font-size: 21px;
 }
+
+/* line 704, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .reviews-author .author-sub {
-	font-size: 17px;
+  font-size: 17px;
 }
+
+/* line 707, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .author-margin {
-	margin: 45px 0 0;
+  margin: 45px 0 0;
 }
+
+/* line 710, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .info-margin {
-	margin: 35px 0 0;
+  margin: 35px 0 0;
 }
+
+/* line 713, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .reviews-indicators {
-	position: absolute;
-	top: 0;
-	right: 14%;
+  position: absolute;
+  top: 0;
+  right: 14%;
 }
+
+/* line 718, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .reviews-indicators .fa {
-	font-size: 26px;
+  font-size: 26px;
 }
+
+/* line 721, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .reviews-indicators .fa:hover {
-	opacity: 0.7;
+  opacity: 0.7;
 }
+
+/* line 724, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .main-reviews-image {
-    padding-bottom: 90px;
+  padding-bottom: 90px;
 }
+
+/* line 727, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-reviews-big-circle {
-	width: 130px;
-	height: 130px;
-	border: 1px solid #FFFFFF;
-	border-radius: 100%;
-	-moz-border-radius: 100%;
-	-webkit-border-radius: 100%;
-	-o-border-radius: 100%;
-	-ms-border-radius: 100%;
-	position: absolute;
-	top: 67%;
-	left: 20%;
+  width: 130px;
+  height: 130px;
+  border: 1px solid #FFFFFF;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -o-border-radius: 100%;
+  -ms-border-radius: 100%;
+  position: absolute;
+  top: 67%;
+  left: 20%;
 }
+
+/* line 740, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-reviews-small-circle {
-	width: 80px;
-	height: 80px;
-	border: 1px solid #FFFFFF;
-	border-radius: 100%;
-	-moz-border-radius: 100%;
-	-webkit-border-radius: 100%;
-	-o-border-radius: 100%;
-	-ms-border-radius: 100%;
-	position: absolute;
-	left: 86%;
-	top: 81%;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #FFFFFF;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -o-border-radius: 100%;
+  -ms-border-radius: 100%;
+  position: absolute;
+  left: 86%;
+  top: 81%;
 }
+
+/* line 753, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-slide-left, .gk-slide-right {
-	padding: 0 10px;
+  padding: 0 10px;
 }
+
 /* =========================== SCREENSHOT SECTION ============================== */
+/* line 757, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .app-section-padding {
-	padding: 140px 0 20px;
+  padding: 140px 0 20px;
 }
+
+/* line 760, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .app-left-info {
-	padding-top: 70px;
+  padding-top: 70px;
 }
+
+/* line 763, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-pointer-features.gk-app-right-arrow {
-	top: 20%;
-	left: 18%;
+  top: 20%;
+  left: 18%;
 }
+
+/* line 767, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .owl-controls {
-	text-align: right;
-	padding: 20px 20px 0 0;
-	max-width: 1200px;
-	margin: 0 auto;
+  text-align: right;
+  padding: 20px 20px 0 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+/* line 773, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .owl-controls .owl-buttons div {
-	display: inline-block;
+  display: inline-block;
 }
+
+/* line 776, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .owl-controls .owl-buttons .fa {
-	padding: 0 10px;
-	font-size: 26px;
+  padding: 0 10px;
+  font-size: 26px;
 }
+
+/* line 780, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .owl-controls .owl-buttons .fa:hover {
-	opacity: 0.7;
+  opacity: 0.7;
 }
+
+/* line 783, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .app-carousel-slider {
-	padding: 15px 0 0;
+  padding: 15px 0 0;
 }
+
+/* line 786, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .screen-item img {
-	border-radius: 12px;
-	-moz-border-radius: 12px;
-	-webkit-border-radius: 12px;
-	-o-border-radius: 12px;
-	-ms-border-radius: 12px;
-	margin: 0 auto;
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  margin: 0 auto;
 }
+
+/* line 794, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .app-container {
-	max-width: 1320px;
+  max-width: 1320px;
 }
+
+/* line 797, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-pointer-features.gk-down-arrow {
-	top: 70%;
-	right: 19%;
+  top: 70%;
+  right: 19%;
 }
+
 /* =========================== DEMO SECTION ============================== */
-.video-bg{
-	background:url(video-bg.png) center center no-repeat;
-	background-size: cover;
-    padding-top:60px;
-	padding-bottom: 60px;	
-	position: relative;
-    height: 510px;
-	margin-top: 20px;
-	border: 2px solid rgba(0,0,0,0.5);
-	border-radius: 6px;
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
-	-o-border-radius: 6px;
-	-ms-border-radius: 6px;
+/* line 802, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
+.video-bg {
+  background: url(video-bg.png) center center no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+  height: 510px;
+  margin-top: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
 }
+
+/* line 817, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 #video_container {
-	height: 510px;
+  height: 510px;
 }
-.mb_YTVPBar .ytpicon { 
-	border-width: 12px;
-	border-radius: 50%;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-o-border-radius: 50%;
-	-ms-border-radius: 50%;
-	font-size: 90px;
-	line-height: 105px;
+
+/* line 820, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
+.mb_YTVPBar .ytpicon {
+  border-width: 12px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  font-size: 90px;
+  line-height: 105px;
 }
-.mb_YTVPBar span{  
-    height: 128px;    
-    width: 128px;
+
+/* line 830, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
+.mb_YTVPBar span {
+  height: 128px;
+  width: 128px;
 }
+
 /* =========================== DOWNLOAD SECTION ============================== */
+/* line 835, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .download-section-padding {
-	padding: 150px 0 20px;
+  padding: 150px 0 20px;
 }
+
+/* line 838, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .download-left-img {
-	margin-top: -60px;
+  margin-top: -60px;
 }
+
+/* line 841, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .download-right-info {
-	padding: 0;
+  padding: 0;
 }
+
+/* line 844, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .download-button {
-	text-align: center;
-	padding-top: 55px;
+  text-align: center;
+  padding-top: 55px;
 }
+
+/* line 848, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-download-btn {
-	font-family: 'Open Sans',sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-    padding: 12px 16px;
-    text-transform: uppercase;
-    width: auto;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 12px 16px;
+  text-transform: uppercase;
+  width: auto;
 }
+
+/* line 856, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-download-btn .fa {
-	padding-right: 10px;
-	font-size: 17px;
+  padding-right: 10px;
+  font-size: 17px;
 }
+
+/* line 860, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-download-pointer {
-	padding: 100px 0 0 110px;
+  padding: 100px 0 0 110px;
 }
+
 /* =========================== CONTACT US SECTION ============================== */
+/* line 864, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-contact-form {
-	padding-top: 40px;
+  padding-top: 40px;
 }
+
+/* line 867, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-contact-form .form-control {
-	background: none;
-	box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
-	-o-box-shadow: none;
-	-ms-box-shadow: none;	
-	resize: none;
-	border: none;
-	border-bottom: 1px solid #fff;
-	border-radius: 0px;
-	-moz-border-radius: 0px;
-	-webkit-border-radius: 0px;
-	-o-border-radius: 0px;
-	-ms-border-radius: 0px;
-	color: #FFFFFF;
-	text-transform: uppercase;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	font-size: 17px;
-	padding-left: 0;
+  background: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  padding-left: 0;
 }
+
+/* line 889, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-contact-form .form-control::-moz-placeholder {
-	color:#fff;
-	text-transform: uppercase;
+  color: #fff;
+  text-transform: uppercase;
 }
+
+/* line 893, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-contact-form .form-control:-ms-input-placeholder {
-	color:#fff;
-	text-transform: uppercase;
+  color: #fff;
+  text-transform: uppercase;
 }
+
+/* line 897, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-contact-form .form-control::-webkit-input-placeholder {
-	color:#fff;
-	text-transform: uppercase;
+  color: #fff;
+  text-transform: uppercase;
 }
+
+/* line 901, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-contact-form .form-group {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
+
+/* line 904, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-textarea-message .form-control {
-	background-image: -webkit-linear-gradient(left, transparent 10px, transparent 10px), -webkit-linear-gradient(right, transparent 10px, transparent 10px), -webkit-linear-gradient(transparent 60px, #fff 60px, #fff 61px, transparent 61px);
-    background-image: -moz-linear-gradient(left, transparent 10px, transparent 10px), -moz-linear-gradient(right, transparent 10px, transparent 10px), -moz-linear-gradient(transparent 60px, #fff 60px, #fff 61px, transparent 61px);
-    background-image: -ms-linear-gradient(left, transparent 10px, transparent 10px), -ms-linear-gradient(right, transparent 10px, transparent 10px), -ms-linear-gradient(transparent 60px, #fff 60px, #fff 61px, transparent 61px);
-    background-image: -o-linear-gradient(left, transparent 10px, transparent 10px), -o-linear-gradient(right, transparent 10px, transparent 10px), -o-linear-gradient(transparent 60px, #fff 60px, #fff 61px, transparent 61px);
-    background-image: linear-gradient(left, transparent 10px, transparent 10px), linear-gradient(right, transparent 10px, transparent 10px), linear-gradient(transparent 60px, #fff 60px, #fff 61px, transparent 61px);
-    background-size: 100% 100%, 100% 100%, 100% 61px;
-	line-height: 61px;
-	border: none;	
+  background-image: -webkit-linear-gradient(left, transparent 10px, transparent 10px), -webkit-linear-gradient(right, transparent 10px, transparent 10px), -webkit-linear-gradient(transparent 60px, white 60px, white 61px, transparent 61px);
+  background-image: -moz-linear-gradient(left, transparent 10px, transparent 10px), -moz-linear-gradient(right, transparent 10px, transparent 10px), -moz-linear-gradient(transparent 60px, white 60px, white 61px, transparent 61px);
+  background-image: -ms-linear-gradient(left, transparent 10px, transparent 10px), -ms-linear-gradient(right, transparent 10px, transparent 10px), -ms-linear-gradient(transparent 60px, white 60px, white 61px, transparent 61px);
+  background-image: -o-linear-gradient(left, transparent 10px, transparent 10px), -o-linear-gradient(right, transparent 10px, transparent 10px), -o-linear-gradient(transparent 60px, white 60px, white 61px, transparent 61px);
+  background-image: linear-gradient(left, transparent 10px, transparent 10px), linear-gradient(right, transparent 10px, transparent 10px), linear-gradient(transparent 60px, white 60px, white 61px, transparent 61px);
+  background-size: 100% 100%, 100% 100%, 100% 61px;
+  line-height: 61px;
+  border: none;
 }
+
+/* line 914, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-submit {
-	background: none;
-	border: 1px solid #fff;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	font-size: 13px;
-	text-transform: uppercase;
-	color: #FFFFFF;
-	padding: 12px 24px;
+  background: none;
+  border: 1px solid #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 12px 24px;
 }
+
+/* line 924, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-contact-form .has-error .form-control {
-	border-color: #a94442;
+  border-color: #a94442;
 }
+
+/* line 927, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-contact-form .has-error .form-control:focus, .gk-contact-form .has-success .form-control:focus {
-	box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
-	-o-box-shadow: none;
-	-ms-box-shadow: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
 }
+
+/* line 934, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-contact-form .has-success .form-control:focus {
-	border-color: #fff;
+  border-color: #fff;
 }
+
+/* line 937, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-textarea-message .form-control-feedback {
-	line-height: 61px;
-	height: 61px;
+  line-height: 61px;
+  height: 61px;
 }
+
+/* line 941, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .has-error .gk-textarea-message .form-control {
-	background-image: -webkit-linear-gradient(left, transparent 10px, transparent 10px), -webkit-linear-gradient(right, transparent 10px, transparent 10px), -webkit-linear-gradient(transparent 60px, #a94442 60px, #a94442 61px, transparent 61px);
-    background-image: -moz-linear-gradient(left, transparent 10px, transparent 10px), -moz-linear-gradient(right, transparent 10px, transparent 10px), -moz-linear-gradient(transparent 60px, #a94442 60px, #a94442 61px, transparent 61px);
-    background-image: -ms-linear-gradient(left, transparent 10px, transparent 10px), -ms-linear-gradient(right, transparent 10px, transparent 10px), -ms-linear-gradient(transparent 60px, #a94442 60px, #a94442 61px, transparent 61px);
-    background-image: -o-linear-gradient(left, transparent 10px, transparent 10px), -o-linear-gradient(right, transparent 10px, transparent 10px), -o-linear-gradient(transparent 60px, #a94442 60px, #a94442 61px, transparent 61px);
-    background-image: linear-gradient(left, transparent 10px, transparent 10px), linear-gradient(right, transparent 10px, transparent 10px), linear-gradient(transparent 60px, #a94442 60px, #a94442 61px, transparent 61px);    
+  background-image: -webkit-linear-gradient(left, transparent 10px, transparent 10px), -webkit-linear-gradient(right, transparent 10px, transparent 10px), -webkit-linear-gradient(transparent 60px, #a94442 60px, #a94442 61px, transparent 61px);
+  background-image: -moz-linear-gradient(left, transparent 10px, transparent 10px), -moz-linear-gradient(right, transparent 10px, transparent 10px), -moz-linear-gradient(transparent 60px, #a94442 60px, #a94442 61px, transparent 61px);
+  background-image: -ms-linear-gradient(left, transparent 10px, transparent 10px), -ms-linear-gradient(right, transparent 10px, transparent 10px), -ms-linear-gradient(transparent 60px, #a94442 60px, #a94442 61px, transparent 61px);
+  background-image: -o-linear-gradient(left, transparent 10px, transparent 10px), -o-linear-gradient(right, transparent 10px, transparent 10px), -o-linear-gradient(transparent 60px, #a94442 60px, #a94442 61px, transparent 61px);
+  background-image: linear-gradient(left, transparent 10px, transparent 10px), linear-gradient(right, transparent 10px, transparent 10px), linear-gradient(transparent 60px, #a94442 60px, #a94442 61px, transparent 61px);
 }
+
+/* line 948, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-form-message {
-	text-align: center;
-	color: #FFFFFF;
-	font-size: 15px;
-	font-weight: 700;
-	padding-top: 10px;
-	display: none;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 700;
+  padding-top: 10px;
+  display: none;
 }
+
+/* line 956, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-form-message .glyphicon {
-	padding-right: 8px;
+  padding-right: 8px;
 }
+
+/* line 959, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-contact-pointer {
-	padding: 160px 0 0;
-	margin-left: -60px;
+  padding: 160px 0 0;
+  margin-left: -60px;
 }
+
+/* line 963, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .gk-contact-pointer img {
-	margin: 0 auto;
+  margin: 0 auto;
 }
+
+/* line 966, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .contact-info {
-	padding-top: 160px;
-	font-size: 17px;
+  padding-top: 160px;
+  font-size: 17px;
 }
+
+/* line 970, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .contact-row {
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
+
+/* line 973, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .contact-row p {
-	margin-bottom: 5px;
+  margin-bottom: 5px;
 }
+
+/* line 976, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .contact-info .simple-icon {
-	font-size: 20px;
-	text-shadow: 0 0 0;
+  font-size: 20px;
+  text-shadow: 0 0 0;
 }
+
 /* =========================== FOOTER SECTION ============================== */
+/* line 981, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .footer-bg {
-	background: #1a2531;
-	color: #7f8c8d;
-	padding: 10px 0;
+  background: #1a2531;
+  color: #7f8c8d;
+  padding: 10px 0;
 }
+
+/* line 986, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .footer-bg p {
-	margin: 0;
+  margin: 0;
 }
+
+/* line 989, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .footer-social-icon {
-	display: inline-block;
-	margin: 0 0 0 20px;
+  display: inline-block;
+  margin: 0 0 0 20px;
 }
+
+/* line 993, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .footer-social-icon a {
-	background: #F1C40F;
-	border-radius: 100%;	
-	font-size: 12px;	
-	display: inline-block;
-	width: 18px;
-	height: 18px;
-	color: #1a2531;
-	margin: 0 3px;	
+  background: #F1C40F;
+  border-radius: 100%;
+  font-size: 12px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  color: #1a2531;
+  margin: 0 3px;
 }
+
+/* line 1003, /Users/louisfourrier/Desktop/StartUp/studyquizz_landing_page/vendor/assets/stylesheets/style.css.scss */
 .footer-social-icon .fa {
-	width: 18px;
-	height: 18px;	
-	display: block;
-	line-height: 18px;
+  width: 18px;
+  height: 18px;
+  display: block;
+  line-height: 18px;
 }
 /* ================================= Responsive CSS ================================= */
 

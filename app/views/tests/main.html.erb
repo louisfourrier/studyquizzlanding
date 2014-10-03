@@ -1,8 +1,40 @@
-<!-- Page Loader -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Title and Meta Tags Begins -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+	<title>StudyQuizz</title>    	
+	<!-- Title and Meta Tags Ends -->
+	
+	<!-- Google Font Begins -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,800italic,700,300italic,700italic,400italic' rel='stylesheet' type='text/css'>
+	<!-- Google Font Ends -->
+	
+	<!-- CSS Begins-->	
+	<link href='http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'/>	
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="/css/carousel.css" rel="stylesheet" type="text/css" />
+	<link href="/css/animate.min.css" rel="stylesheet" type="text/css"/>	
+	<link href="/css/YTPlayer.css" rel="stylesheet" type="text/css" />
+	<link href="/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
+	<!-- Main Style -->
+	<link href="/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="/css/responsive.css" rel="stylesheet" type="text/css" />	
+	<!-- Color Panel -->
+    <link href="/css/color-panel.css" rel="stylesheet" type="text/css" />
+		
+</head>
+<body>
+
+	<!-- Page Loader -->
 	<div class="pageloader"></div>
 	
 	<!-- Wrapper Begins -->
-	<div id="wrapper" class="wrapper-class">
+	<div id="wrapper" class="wrapper-class" style="background-color: white;">
 		<!-- Header Begins -->
 		<div id="header" class="header-section">
 			<!-- Sticky Header Begins -->
@@ -13,7 +45,7 @@
 						
 							<!-- Logo Begins -->
 							<div class="col-md-2 logo">
-								<a href="#" title="GeekApp"><%= image_tag "logo.png", :class => "img-responsive", :alt => "GeekApp" %></a>
+								<a href="#" title="StudyQuizz"><%= image_tag "logo.png", :class => "img-responsive", :alt => "GeekApp" %></a>
 							</div>
 							<!-- Logo Ends -->
 							
@@ -40,7 +72,6 @@
 										<li><a href="#app-screen" class="scroll">Screenshot</a></li>
 										<li><a href="#video" class="scroll">Demo</a></li>
 										<li><a href="#download" class="scroll">Download</a></li>
-										
 									</ul>
 								</nav><!-- Menu Ends -->
 							</div><!-- Navigation Menu Ends -->
@@ -70,7 +101,7 @@
 							<!-- Banner Content -->
 							<div class="row">
 								<div class="col-md-10">
-									<p class="banner-text">Disponible sur Android et IOS, Study Quizz est une famille d’applications proposant un outil ludique d’apprentissage et de révision qui accompagne l’étudiant du brevet des collèges jusqu’à la .
+									<p class="banner-text">Disponible sur Android et IOS, Study Quizz est une famille d’applications proposant un outil ludique d’apprentissage et de révision qui accompagne l’étudiant du brevet des collèges jusqu’à la 
 										<span class="extrabold-italic"> recherche de son premier stage.</span>
 									</p>
 								</div>
@@ -143,34 +174,22 @@
 				</div>
 			</div><!-- Banner Section Ends -->
 			
-			
-			
-			
-		</div><!-- Header Ends -->
-		
-		<!-- Layout Begins -->
-		<section id="shapes" class="shape-section">
-			<!-- Shape 1 Container Begins -->
-			<div class="gk-shape-cover">
-				<!-- Shape 1 Color Begins -->
-				<div class="gk-dd-shape grey-green-color index-1">
+			<div class="" style="background-color: white;">				
+				<div id="filieres" class="container features-section index-big relative">
+					<div class="row">
 					
-					<!-- Filières Section Begins -->
-					<div id="filieres" class="features-section index-big relative">
-						<div class="container relative">
+						<!-- Left Banner Text Begins -->					
+						<div class="col-md-5 left-banner-image animated" data-animation="fadeInLeft" data-animation-delay="500">
+							<!-- Banner Title -->
+							<!-- Banner Image -->
+								<div class="col-sm-10">
+									<%= image_tag "image-applis.png", class:"img-responsive pull-left", alt:"All studyquizz applications", style: "z-index: 10000000;" %>
+								</div>
+						</div><!-- Left Banner Text Ends -->
+						<!-- Right Banner Image Begins -->
+						<div class="col-md-7 right-banner-text animated" data-animation="fadeInRight" data-animation-delay="500">
 							<div class="row">
-								<!-- Features Left Info Begins -->
-								<div class="col-md-4 features-left-info animated" data-animation="fadeInLeft" data-animation-delay="500">
-									<%= image_tag "image-applis.png", class:"img-responsive pull-left", alt:"All studyquizz applications" %>
-								</div><!-- Features Left Info Ends -->
-								<!-- Features Right Info Begins -->
-								<div class="col-md-8 features-right-info animated" data-animation="fadeInRight" data-animation-delay="500">
-									<!-- Shape Pointer -->	
-									<div class="gk-pointer-features gk-right-arrow animated" data-animation="fadeInLeftBig" data-animation-delay="1200">
-										<img src="<%= image_path("right-arrow-icon.png") %>" alt="Pointer" class="img-responsive" />
-									</div>
-									<!-- Title -->
-									<h2 class="section-title color-grey"><span class="text-extrabold">Toutes nos</span> Filières</h2>
+								<h2 class="section-title color-grey"><span class="text-extrabold">Toutes nos</span> Filières</h2>
 									<!-- Shape Down Arrow -->
 									<p class="text-center color-grey"><i class="flaticon flaticon-yield gk-triangle-medium"></i></p>
 									<!-- Description -->
@@ -179,19 +198,26 @@
 									<h4 class="section-msg text-center color-grey">
 									<b> Notre promesse :</b> Nos contenus sont exhaustifs et conformes aux différents programmes en vigueur.
 									</h4>	
-									<h4 class="section-msg text-center color-grey">
+									<h4 class="section-msg text-center color-grey"><small>
 Chaque filière est traitée dans son intégralité, 100 % du programme, 100% réussite. Si vous répondez
 
-bien à toutes les questions, soyez en sûr, vous êtes prêts !
+bien à toutes les questions, soyez en sûr, vous êtes prêts !</small>
 </h4>				
-			
-								</div><!-- Features Right Info Ends -->
+								
 							</div>
-							
-						</div>
-					</div><!-- Filières Section Ends -->
-					
-					
+						</div> <!-- Right Banner Image Begins -->
+						
+					</div>
+				</div>
+			</div><!-- Banner Section Ends -->
+		</div><!-- Header Ends -->
+		
+		<!-- Layout Begins -->
+		<section id="shapes" class="shape-section">
+			<!-- Shape 1 Container Begins -->
+			<div class="gk-shape-cover">
+				<!-- Shape 1 Color Begins -->
+				<div class="gk-dd-shape grey-green-color index-1">
 					<!-- Features Section Begins -->
 					<div id="features" class="features-section index-big relative">
 						<div class="container relative">
@@ -221,11 +247,11 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 									<!-- Title -->
 									<h2 class="section-title color-grey"><span class="text-extrabold">Des fonctionnalités </span> inédites</h2>
 									<!-- Shape Down Arrow -->
-									<p class="text-center color-white"><i class="flaticon flaticon-yield gk-triangle-medium"></i></p>
+									<p class="text-center color-grey"><i class="flaticon flaticon-yield gk-triangle-medium"></i></p>
 									<!-- Description -->
-									<h3 class="section-msg text-center color-yellow"><b> Study Quizz propose une large palette de modes de révision ou d’apprentissage. L’alliance de l’efficacité et du ludique !</b> </h3>
+									<h3 class="section-msg text-center color-grey">Study Quizz propose une large palette de modes de révision ou d’apprentissage. L’alliance de l’efficacité et du ludique !</h3>
 									
-									<div class="container features-right-grid color-white">
+									<div class="container features-right-grid">
 										<!-- First Row Begins -->
 										<div class="row">
 											<!-- Column 1 Begins -->
@@ -234,7 +260,7 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 													<!-- Icon -->
 													<span class="simple-icon icon-pencil color-yellow"></span>
 													<!-- Title -->
-													<h4 class="text-uppercase grid-title text-bold color-white">En Solo</h4>
+													<h4 class="text-uppercase grid-title text-bold color-grey">En Solo</h4>
 													<!-- Content -->
 													<p>Toutes les matières au programme organisées par chapitres pour des révisions ciblées</p>
 												</div>
@@ -247,7 +273,7 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 													<!-- Icon -->											
 													<span class="simple-icon icon-magnifier color-yellow"></span>
 													<!-- Title -->
-													<h4 class="text-uppercase grid-title text-bold color-white">En Duel</h4>
+													<h4 class="text-uppercase grid-title text-bold color-grey">En Duel</h4>
 													<!-- Content -->
 													<p>Défiez vos amis ou d’autres utilisateurs étudiant de votre filière.</p>
 												</div>
@@ -264,7 +290,7 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 													<!-- Icon -->
 													<span class="simple-icon icon-camera color-yellow"></span>
 													<!-- Title -->
-													<h4 class="text-uppercase grid-title text-bold color-white">Study Timer</h4>
+													<h4 class="text-uppercase grid-title text-bold color-grey">Study Timer</h4>
 													<!-- Content -->
 													<p>Le premier réveil éducatif au monde ! Il est votre ami, votre coach, il est toujours à vos côtés...</p>
 												</div>												
@@ -275,7 +301,7 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 													<!-- Icon -->
 													<span class="simple-icon icon-paper-clip color-yellow"></span>
 													<!-- Title -->
-													<h4 class="text-uppercase grid-title text-bold color-white">Fiches Révision</h4>
+													<h4 class="text-uppercase grid-title text-bold color-grey">Fiches Révision</h4>
 													<!-- Content -->
 													<p>Des fiches pour des notions clés au programme. Soyez sûr de ne rien rater...</p>
 												</div>												
@@ -298,13 +324,13 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 						<div class="container">
 							<!-- Reviews Top Row -->
 							<div class="row">
-								<div class="col-md-8 col-lg-8 app-reviews animated col-md-offset-2 col-lg-offset-2" data-animation="fadeInLeft" data-animation-delay="500">
+								<div class="col-md-7 col-lg-6 app-reviews animated" data-animation="fadeInLeft" data-animation-delay="500">
 									<!-- Title -->
-									<h2 class="section-title color-white"><span class="text-extrabold"></span>Voilà ce que nos utilisateurs disent de nous...</h2>
+									<h2 class="section-title color-grey"><span class="text-extrabold">Témoignages</span> </h2>
 									<!-- Shape Down Arrow -->
 									<p class="color-grey text-center"><i class="flaticon flaticon-yield gk-triangle-medium"></i></p>
 									<!-- Description -->
-									<h3 class="section-msg text-center color-white">Hear what our customer have to say...</h3>
+									<h3 class="section-msg text-center color-grey">Voilà ce que nos utilisateurs disent de nous...</h3>
 									<!-- Shape Pointer -->
 									<div class="gk-pointer-features gk-left-arrow"><img src="<%= image_path("left-arrow-icon.png") %>" alt="Pointer" class="img-responsive" /></div>
 								</div>								
@@ -331,7 +357,18 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 											<div class="item active container">
 												<div class="row item-grid">
 												
-													
+													<div class="col-lg-6 col-md-6 reviews-info color-grey">
+														<!-- Content -->
+														<div class="reviews-msg">
+															<p class="light-italic info-margin">L’app est complète, précise et correspond parfaitement à mon programme. Merci beaucoup ! En plus le mode défi permet de s’évaluer par rapport aux autres <span class="extrabold-italic">, ce qui est un vrai + en prépa !</span></p>
+														</div>
+														<!-- Author Info -->
+														<div class="reviews-author">
+															<p class="text-bold text-uppercase author-margin">Chacha17</p>
+															<p class="text-bold text-uppercase author-sub">Prépa HEC</p>
+														</div>
+														
+													</div>
 													
 													<!-- Image -->
 													<div class="col-lg-6 col-md-5 reviews-image">
@@ -346,18 +383,6 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 														</div>														
 													</div>
 													
-													<div class="col-lg-6 col-md-6 reviews-info color-white">
-														<!-- Content -->
-														<div class="reviews-msg">
-															<p class="light-italic info-margin">L’app est complète, précise et correspond parfaitement à mon programme. Merci beaucoup ! En plus le mode défi permet de s’évaluer par rapport aux autres <span class="extrabold-italic">, ce qui est un vrai + en prépa !</span></p>
-														</div>
-														<!-- Author Info -->
-														<div class="reviews-author">
-															<p class="text-bold text-uppercase author-margin">Chacha17</p>
-															<p class="text-bold text-uppercase author-sub">Prépa HEC</p>
-														</div>
-													</div>
-													
 												</div>
 											</div>
 						
@@ -365,7 +390,17 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 											<div class="item container">
 												<div class="row item-grid">
 												
-													
+													<div class="col-lg-6 col-md-6 reviews-info color-grey">
+														<!-- Content -->
+														<div class="reviews-msg">
+															<p class="light-italic info-margin">Merci pour cette préparation aux concours Ingés post bac, j’aurais jamais pensé que quelqu’un ferait ça,<span class="extrabold-italic">c’est super merci !!!!</span></p>
+														</div>
+														<!-- Author Info -->
+														<div class="reviews-author">
+															<p class="text-bold text-uppercase author-margin">Maxouiii</p>
+															<p class="text-bold text-uppercase author-sub">Post Bac</p>
+														</div>
+													</div>
 													
 													<!-- Image -->
 													<div class="col-lg-6 col-md-5 reviews-image">
@@ -378,18 +413,6 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 																<div class="gk-reviews-small-circle"></div>
 															</div>
 														</div>
-													</div>
-													
-													<div class="col-lg-6 col-md-6 reviews-info color-white">
-														<!-- Content -->
-														<div class="reviews-msg">
-															<p class="light-italic info-margin color-white">Merci pour cette préparation aux concours Ingés post bac, j’aurais jamais pensé que quelqu’un ferait ça,<span class="extrabold-italic">c’est super merci !!!!</span></p>
-														</div>
-														<!-- Author Info -->
-														<div class="reviews-author">
-															<p class="text-bold text-uppercase author-margin">Maxouiii</p>
-															<p class="text-bold text-uppercase author-sub">Post Bac</p>
-														</div>
 													</div>												
 													
 												</div>
@@ -399,22 +422,7 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 											<div class="item container">
 												<div class="row item-grid">
 												
-													
-													
-													<!-- Image -->
-													<div class="col-lg-6 col-md-5 reviews-image">													
-														<div class="main-reviews-image container">
-															<div class="row">
-																<img class="img-responsive img-circle" src="<%= image_path("reviews/reviews-3.jpg") %>" width="330" height="330" alt="Jennifer" />
-															</div>
-															<div class="gk-reviews-circle-container row">
-																<div class="gk-reviews-big-circle"></div>
-																<div class="gk-reviews-small-circle"></div>
-															</div>
-														</div>
-													</div>		
-													
-													<div class="col-lg-6 col-md-6 reviews-info color-white">
+													<div class="col-lg-6 col-md-6 reviews-info color-grey">
 														<!-- Content -->
 														<div class="reviews-msg">												
 															<p class="light-italic info-margin">Je suis en M1 de Droit des affaires à Lyon, l’appli est vraiment bien faite, les questions sont parfois un peu faciles pour une bonne élève, mais dans l’ensemble très enrichissante. <span class="extrabold-italic">Continuez !.</span></p>
@@ -423,6 +431,19 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 														<div class="reviews-author">
 															<p class="text-bold text-uppercase author-margin">Eli625</p>
 															<p class="text-bold text-uppercase author-sub">Master Droit</p>
+														</div>
+													</div>		
+													
+													<!-- Image -->
+													<div class="col-lg-6 col-md-5 reviews-image">													
+														<div class="main-reviews-image container">
+															<div class="row">
+																<img class="img-responsive img-circle" src="/images/reviews/reviews-3.jpg" width="330" height="330" alt="Jennifer" />
+															</div>
+															<div class="gk-reviews-circle-container row">
+																<div class="gk-reviews-big-circle"></div>
+																<div class="gk-reviews-small-circle"></div>
+															</div>
 														</div>
 													</div>											
 													
@@ -450,24 +471,27 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 						<div class="container relative">
 							<!-- Screenshot Top Row Begins -->
 							<div class="row">
-								<!-- Screenshot Left Info Begins -->
-								
-								<div class="col-md-8 app-right-info animated" data-animation="fadeInRight" data-animation-delay="500">
+								<!-- Screenshot Left Info Begins -->	
+								<div class="col-md-4 app-left-info animated" data-animation="fadeInLeft" data-animation-delay="500">
 									<!-- Title -->
-									<h2 class="section-title color-grey"><span class="text-extrabold">App</span> Screenshots</h2>
-									<!-- Shape Down Arrow -->									
-									<p class="text-center color-grey"><i class="flaticon flaticon-yield gk-triangle-medium"></i></p>	
-									<!-- Description -->								
-									<h3 class="section-msg text-center color-grey">Des screenshots de l'app</h3>									
-								</div><!-- Screenshot Right Info Ends -->
-								
-									
-								
+									<h3 class="section-msg1 color-grey text-uppercase"><span class="text-extrabold">Interface</span> <br />Intuituve</h3>
+									<!-- Content -->
+									<p>Des mises à jour régulières de tous les contenus.</p>																	
+								</div>
 								<!-- Screenshot Left Info Ends -->
 								<!-- Shape Pointer -->
-								
+								<div class="gk-pointer-features gk-app-right-arrow animated" data-animation="fadeIn" data-animation-delay="900">
+									<img src="images/right-arrow-icon.png" alt="Pointer" class="img-responsive" />
+								</div>
 								<!-- Screenshot Right Info Begins -->
-								
+								<div class="col-md-8 app-right-info animated" data-animation="fadeInRight" data-animation-delay="500">
+									<!-- Title -->
+									<h2 class="section-title color-white"><span class="text-extrabold">App</span> Screenshot</h2>
+									<!-- Shape Down Arrow -->									
+									<p class="text-center color-white"><i class="flaticon flaticon-yield gk-triangle-medium"></i></p>	
+									<!-- Description -->								
+									<h3 class="section-msg text-center color-white">Des screenshots de l'app</h3>									
+								</div><!-- Screenshot Right Info Ends -->
 							</div><!-- Screenshot Top Row Ends -->
 						</div>
 						
@@ -538,6 +562,14 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 							</div><!-- Video Row Ends -->
 						</div>						
 					</div><!-- Demo Section Ends -->
+				
+				</div><!-- Shape 2 Color Ends -->
+			</div><!-- Shape 2 Container Ends -->
+			
+			<!-- Shape 3 Container Begins -->
+			<div class="gk-shape-cover">
+				<!-- Shape 3 Color Begins -->
+				<div class="gk-dd-shape yellow-white-color index-3">
 					
 					<!-- Download Section Begins -->
 					<div id="download" class="download-section download-section-padding index-big relative">
@@ -574,18 +606,6 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 							</div><!-- Download Content Row Ends -->
 						</div>
 					</div><!-- Download Section Ends -->
-				
-				</div><!-- Shape 2 Color Ends -->
-			</div><!-- Shape 2 Container Ends -->
-			
-			<hr />
-			<!-- Shape 3 Container Begins -->
-			
-			<div class="gk-shape-cover">
-				<!-- Shape 3 Color Begins -->
-				<div class="gk-dd-shape yellow-white-color index-3">
-					
-					
 					
 					<!-- Contact Section Begins -->					
 					<div id="contact-us" class="contact-section section-padding index-big relative">
@@ -594,11 +614,11 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 								<!-- Contact Left Info Begins -->
 								<div class="col-md-6 animated" data-animation="fadeInLeft" data-animation-delay="500">
 									<!-- Title -->
-									<h2 class="section-title color-white"><span class="text-extrabold">Contact</span> Us</h2>
+									<h2 class="section-title color-white"><span class="text-extrabold">Contactez</span> Nous</h2>
 									<!-- Shape Down Arrow -->
 									<p class="text-center color-white"><i class="flaticon flaticon-yield gk-triangle-medium"></i></p>
 									<!-- Description -->
-									<h3 class="section-msg text-center color-white">Let drop a line to us & we will be <br />in touch soon.</h3>
+									<h3 class="section-msg text-center color-white">Laissez nous un message <br /></h3>
 									
 									<!-- Contact Form Container Begins -->
 									<p class="gk-form-message"></p>
@@ -611,7 +631,7 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 														<div class="row">
 															<!-- Input: Name -->
 															<div class="col-md-6 form-group gk-input-text">																											
-																<input type="text" name="contact_name" class="input-name form-control" placeholder="Name">																
+																<input type="text" name="contact_name" class="input-name form-control" placeholder="Nom">																
 															</div>
 															<!-- Input: Email -->
 															<div class="col-md-6 form-group gk-email pull-right">																							
@@ -627,7 +647,7 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 													</div>													
 													<!-- Submit Button -->
 													<div class="gk-input-submit submit">
-														<button type="submit" class="btn gk-submit">Send Message</button>										
+														<button type="submit" class="btn gk-submit">Envoyer</button>										
 													</div>
 												</div>
 											</div>
@@ -638,7 +658,7 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 								<!-- Contact Right Info Begins -->
 								<div class="col-md-6 animated" data-animation="fadeInRight" data-animation-delay="500">
 									<!-- Shape Pointer -->
-									<div class="gk-contact-pointer gk-contact-down-arrow"><img src="images/down-arrow-icon.png" alt="Pointer" class="img-responsive" /></div>
+									<div class="gk-contact-pointer gk-contact-down-arrow"><img src="/images/down-arrow-icon.png" alt="Pointer" class="img-responsive" /></div>
 									<!-- Contact Info Begins -->
 									<div class="container contact-info">										
 										<div class="row">
@@ -658,7 +678,7 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 												<!-- Title -->
 												<p class="bold-italic color-grey">Email us</p>
 												<!-- Content -->
-												<p class="light-italic color-grey">support@geekapp.com</p>
+												<p class="light-italic color-grey">support@StudyQuizz.com</p>
 											</div>
 											<!-- Row 3 -->
 											<div class="col-xs-12 text-center contact-row">
@@ -680,10 +700,7 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 				</div><!-- Shape 3 Color Ends -->
 			</div><!-- Shape 3 Container Ends -->
 			
-			
 		</section><!-- Layout Ends -->
-		
-		
 		
 		<!-- Footer Begins -->
 		<div id="footer" class="footer-section">
@@ -692,7 +709,7 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 					<div class="row">
 						<!-- Footer Content -->
 						<div class="center-block">
-							<p class="text-center">&copy; 2014 StudyQuizz
+							<p class="text-center">&copy; 2014 StudyQuizz 
 								<span class="footer-social-icon">
 									<a href="#" class="gk-facebook"><i class="fa fa-facebook"></i></a>
 									<a href="#" class="gk-twitter"><i class="fa fa-twitter"></i></a>
@@ -706,240 +723,27 @@ bien à toutes les questions, soyez en sûr, vous êtes prêts !
 		
 	</div><!-- Wrapper Ends -->
 		
-	
-	
-		
-	
+
 	
 	<!-- Script Begins -->
-	<script id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflxRFjaB/www-widgetapi.js" async=""></script>
-<script src="http://www.youtube.com/player_api" id="YTAPI"></script>
-
-<%= content_for(:javascript) do %>
-<script>
-	$(window).load(function() {
-	'use strict';
-	$(".pageloader").delay(1000).fadeOut("slow");
-	InitcssFix();	
-	});
-	
-jQuery( document ).ready(function($) {
-	
-	InitcssFix();
-	
-	/* ===================
-	Animated Items
-	=================== */	
-	$('.animated').appear(function() {
-		var elem = $(this);
-		var animation = elem.data('animation');
-		if ( !elem.hasClass('visible') ) {
-			var animationDelay = elem.data('animation-delay');
-			if ( animationDelay ) {
-	
-				setTimeout(function(){
-					elem.addClass( animation + " visible" );
-				}, animationDelay);
-	
-			} else {
-				elem.addClass( animation + " visible" );
-			}
-		}
-	});
-	
-	
-	
-	
-	/* =============================
-	Carousel Slider
-	============================= */	
-	$("#app-screenshot").owlCarousel({
-		items : 3,
-		lazyLoad : true,
-		autoPlay: false,
-		navigation : true,
-		navigationText: ['<i class="fa fa-chevron-left color-white"></i>','<i class="fa fa-chevron-right color-white"></i>'],		
-		pagination: false,
-		itemsCustom : false,
-		itemsDesktop : [1199, 3],
-		itemsDesktopSmall : [980, 3],
-		itemsTablet : [768, 2],
-		itemsTabletSmall : false,
-		itemsMobile : [479, 1]
-	});
-	
-	/* ===================
-	Scroll Navigation
-	=================== */	
-	$('.scroll').bind('click', function(event) {
-		var $anchor = $(this);		
-		
-		$('html, body').animate({scrollTop : $($anchor.attr('href')).offset().top  + 2 + "px"}, 1200, 'easeInOutExpo');
-
-		event.preventDefault();
-		return false;
-	});
-	
-	// Menus hide after click on mobile devices
-	$('.nav li a').click(function () {
-		 $('.navbar-collapse').removeClass('in');
-		 return false;
-	});
-	
-	/* ===================
-	Fixed Menu on Scroll
-	=================== */	
-	$("#sticky-menu").sticky({topSpacing:0});
-	
-	/* =============================
-	Active Scrollspy Navigation
-	============================= */	
-	$('body').scrollspy({ 
-	  target: '#topnav',
-	  offset: 95
- 	});
-	
-	/* =============================
-	Contact Form Validation
-	============================= */	
-	$('#contactform').bootstrapValidator({
-        message: '',
-        feedbackIcons: {
-            valid: 'fa fa-check',
-            invalid: 'fa fa-times',
-            validating: 'fa fa-refresh'
-        },
-        fields: {            
-			contact_name: {
-                validators: {
-                    notEmpty: {
-                        message: ''
-                    }
-                }
-            },
-			contact_email: {
-                validators: {
-                    notEmpty: {
-                        message: ''
-                    },
-                    emailAddress: {
-                        message: ''
-                    }
-                }
-            },			
-			contact_message: {
-                validators: {
-                    notEmpty: {
-                        message: ''
-                    }                    
-                }
-            }
-        },
-		submitHandler: function(validator, form, submitButton) {
-						
-			var data = $('#contactform').serialize();
-			
-			$.ajax({
-					type: "POST",
-					url: "process.php",					
-					data: $('#contactform').serialize(),
-					success: function(msg){						
-						$('.gk-form-message').html(msg);
-						$('.gk-form-message').show();
-						submitButton.removeAttr("disabled");
-						resetForm($('#contactform'));						
-					},
-					error: function(msg){						
-						$('.gk-form-message').html(msg);
-						$('.gk-form-message').show();
-						submitButton.removeAttr("disabled");
-						resetForm($('#contactform'));
-					}
-             });
-			 
-			return false;
-        },
-    });
-	
-	function resetForm($form) {
-		$form.find('input:text, input:password, input, input:file, select, textarea').val('');
-		$form.find('input:radio, input:checkbox').removeAttr('checked').removeAttr('selected');		
-		$form.find('input:text, input:password, input, input:file, select, textarea, input:radio, input:checkbox').parent().find('.form-control-feedback').hide();
-	}
-	
-	/* =============================
-	Color Panel
-	============================= */	
-	// Theme Panel Open/Close
-	$( "#theme-panel .panel-button" ).click(function(){
-		$( "#theme-panel" ).toggleClass( "close-theme-panel", "open-theme-panel", 1000 );
-		$( "#theme-panel" ).toggleClass( "open-theme-panel", "close-theme-panel", 1000 );
-		return false;
-	});
-	
-	/* =============================
-	Count Section
-	============================= */	
-	$(".count-number").appear(function(){
-		$(this).each(function(){
-			var datacount = $(this).attr('data-count');
-			$(this).find('.counter').delay(6000).countTo({
-				from: 10,
-				to: datacount,
-				speed: 3000,
-				refreshInterval: 50,
-			});
-		});
-	});
-	
-	/* ===================
-	Video Script
-	=================== */
-	$(".player").mb_YTPlayer();
-		
-});
-
-$(window).resize(function() {
-	'use strict';
-	InitcssFix();
-});
-
-/* ===============================
- CSS Fix for Background Shapes
-=============================== */
-function InitcssFix() {	
-	var width = $(window).width();
-	
-	if( width >= 1480 && width < 1600 ) {
-		$('.wrapper-class').addClass('after-1500');
-		$('.wrapper-class').removeClass('after-1600');
-	} else if( width >= 1600 && width < 1800 ) {
-		$('.wrapper-class').addClass('after-1600');
-		$('.wrapper-class').removeClass('after-1500');
-		$('.wrapper-class').removeClass('after-2000');
-	} else if( width >= 1800 && width < 2000 ) {
-		$('.wrapper-class').addClass('after-1800');
-		$('.wrapper-class').removeClass('after-1600');
-		$('.wrapper-class').removeClass('after-2000');
-	} else if( width >= 2000 && width < 2600 ) {
-		$('.wrapper-class').addClass('after-2000');
-		$('.wrapper-class').removeClass('after-1600');
-		$('.wrapper-class').removeClass('after-1800');
-		$('.wrapper-class').removeClass('after-2600');
-	} else if( width >= 2600 && width < 3000 ) {
-		$('.wrapper-class').addClass('after-2600');
-		$('.wrapper-class').removeClass('after-2000');
-		$('.wrapper-class').removeClass('after-3000');
-	} else if( width >= 3000 ) {
-		$('.wrapper-class').addClass('after-3000');
-		$('.wrapper-class').removeClass('after-2600');
-	} else if( width <= 1480 ) {
-		$('.wrapper-class').removeClass('after-1500');		
-	}
-	
-}
-	
-	
-	
-</script>
-	<% end %>
+	<script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<!-- Form Validation -->
+	<script type="text/javascript" src="/js/bootstrapValidator.min.js"></script>
+	<!-- Sticky Header -->
+	<script type="text/javascript" src="/js/jquery.sticky.js"></script>
+	<!-- Carousel Slider -->
+	<script type="text/javascript" src="/js/carousel.min.js"></script>	
+	<!-- Animation and Counter -->
+	<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>	
+	<script type="text/javascript" src="/js/jquery.appear.js"></script>
+	<script type="text/javascript" src="/js/jquery.countTo.js"></script>
+	<!-- Simple Line Icons Font -->
+	<!--[if lte IE 7]><script src="js/icons-lte-ie7.js"></script><![endif]-->
+	<!-- Video -->
+	<script type="text/javascript" src="/js/jquery.mb.YTPlayer.js"></script>
+	<!-- Custom -->
+	<script type="text/javascript" src="/js/custom.js"></script>	
+	<!-- Script Ends -->
+</body>
+</html>
